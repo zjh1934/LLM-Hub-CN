@@ -63,6 +63,22 @@ android {
     // Configure asset packs for install-time delivery
     assetPacks += mutableSetOf(":qnn_pack", ":sd_pack")
 
+    // 固定签名：CI 会把同一个 PKCS12 密钥写入 app/ci-signing.p12。
+    // 覆盖 AGP 自带的临时 debug keystore，之后每次出包证书都不变，可直接覆盖安装、模型不丢。
+    // 本地编译只要把同一个 llmhub-cn.p12 放到 android/app/ci-signing.p12，签名同样一致。
+    signingConfigs {
+        getByName("debug") {
+            val fixedKeystore = project.file("ci-signing.p12")
+            if (fixedKeystore.exists()) {
+                storeFile = fixedKeystore
+                storeType = "PKCS12"
+                storePassword = System.getenv("SIGNING_STORE_PASSWORD") ?: "LlmHubCN2026Fixed"
+                keyAlias = System.getenv("SIGNING_KEY_ALIAS") ?: "llmhub-cn"
+                keyPassword = System.getenv("SIGNING_KEY_PASSWORD") ?: "LlmHubCN2026Fixed"
+            }
+        }
+    }
+
     buildTypes {
         release {
             // Enable R8 code shrinking and obfuscation to meet Google Play's 25% threshold

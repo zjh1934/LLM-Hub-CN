@@ -6,7 +6,7 @@ on:
       tag:
         description: Release 标签
         required: true
-        default: v4.5.1-cn1
+        default: v4.5.1-cn2
   push:
     tags:
       - 'v*'
@@ -19,6 +19,10 @@ jobs:
       contents: write
     env:
       GRADLE_OPTS: "-Xmx6g -Xms2g -Dorg.gradle.parallel=false -Dorg.gradle.caching=true"
+      SIGNING_KEYSTORE_BASE64: ${{ secrets.SIGNING_KEYSTORE_BASE64 }}
+      SIGNING_STORE_PASSWORD: LlmHubCN2026Fixed
+      SIGNING_KEY_ALIAS: llmhub-cn
+      SIGNING_KEY_PASSWORD: LlmHubCN2026Fixed
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
@@ -50,9 +54,19 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('android/gradle/wrapper/gradle-wrapper.properties', 'android/build.gradle.kts', 'android/app/build.gradle.kts') }}
           restore-keys: ${{ runner.os }}-gradle-
 
-      - name: 写入 local.properties 并解锁高级功能
+      - name: 恢复固定签名密钥
+        run: |
+          echo "$SIGNING_KEYSTORE_BASE64" | base64 -d > android/app/ci-signing.p12
+          ls -l android/app/ci-signing.p12
+          keytool -list -keystore android/app/ci-signing.p12 -storetype PKCS12             -storepass "$SIGNING_STORE_PASSWORD" -alias "$SIGNING_KEY_ALIAS" > /dev/null
+          echo "keystore OK"
+
+      - name: 写入 local.properties、解锁高级功能并递增 versionCode
         run: |
           echo "DEBUG_PREMIUM=true" > android/local.properties
+          NEW_CODE=$((169 + ${{ github.run_number }}))
+          sed -i "s/versionCode = [0-9]*/versionCode = $NEW_CODE/" android/app/build.gradle.kts
+          grep "versionCode" android/app/build.gradle.kts
           chmod +x android/gradlew
 
       - name: 构建 Debug APK
@@ -60,21 +74,37 @@ jobs:
         run: ./gradlew assembleDebug --no-daemon -Dorg.gradle.jvmargs="-Xmx5g -XX:MaxMetaspaceSize=512m"
         timeout-minutes: 90
 
+      - name: 记录签名证书指纹
+        run: |
+          APKSIGNER=$(find "$ANDROID_HOME/build-tools" -name apksigner -type f | sort | tail -1)
+          test -n "$APKSIGNER" || { echo "apksigner not found"; exit 1; }
+          echo "apksigner: $APKSIGNER"
+          "$APKSIGNER" verify --print-certs android/app/build/outputs/apk/debug/app-debug.apk | tee apksigner-out.txt
+          grep -i "SHA-256" apksigner-out.txt | head -1 > cert-sha256.txt
+          cat cert-sha256.txt
+
       - name: 上传构建产物
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
-          path: android/app/build/outputs/apk/debug/*.apk
+          path: |
+            android/app/build/outputs/apk/debug/*.apk
+            cert-sha256.txt
 
       - name: 创建 Release 并上传 APK
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
           name: LLM Hub 国内源版 ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
-          files: android/app/build/outputs/apk/debug/*.apk
+          files: |
+            android/app/build/outputs/apk/debug/*.apk
+            cert-sha256.txt
           body: |
             LLM Hub 二次开发版：去广告 / 解锁高级功能 + 模型下载源改为 HF-Mirror。
             保留 LTX-Video 2B 0.9.8 图生视频，含骁龙 8 Gen 3 专用 v75 QNN 包。
-            由 GitHub Actions 自动构建，产物为 debug 签名 APK。
+
+            【固定签名】自本版起所有构建使用同一个 PKCS12 密钥（存于仓库 Actions Secret
+            SIGNING_KEYSTORE_BASE64），证书指纹见 cert-sha256.txt。后续改代码重出包可直接覆盖安装，
+            App 私有目录里的模型不会丢。首次从旧 debug 包升级仍需卸载一次。
           draft: false
           prerelease: false

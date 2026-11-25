@@ -4,3 +4,5 @@ node_modules/
 desktop/node_modules/
 desktop/**/node_modules/
 
+# 固定签名密钥（仅 CI 从 Actions Secret 恢复，不入仓库）
+android/app/ci-signing.p12
