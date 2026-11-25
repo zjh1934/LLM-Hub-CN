@@ -3,7 +3,7 @@
 ## 这个版本做了什么
 - 底子：Omar-afk801/LLM-Hub-FOSS —— 已去广告、已解锁全部高级功能、Releases 带现成 APK，且保留 LTX-Video 2B 0.9.8 图生视频（含骁龙 8 Gen 3 的 v75 QNN 包，768x512 / 25 帧）。
 - 中文界面：FOSS 4.5.x 已自带 values-zh/strings.xml（1061 条），无需从 huxu7755 合并。
-- 本次改动：把所有模型下载源从 huggingface.co 换成 https://hf-mirror.com（共 439 处），并在 local.properties / build.gradle.kts 默认打开 DEBUG_PREMIUM。
+- 本次改动：把所有模型下载源从 huggingface.co 换成 https://hf-mirror.com（共 438 处（428 + 7 + 3）），并在 local.properties / build.gradle.kts 默认打开 DEBUG_PREMIUM。
 - CI：合并 FOSS 的自动发 Release 与 huxu7755 的 SDK/NDK 安装配置，push v* 标签或手动运行即出 APK。
 
 ## 改了哪些文件（路径即仓库内路径）
