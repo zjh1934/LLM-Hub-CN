@@ -58,7 +58,7 @@ jobs:
         run: |
           echo "$SIGNING_KEYSTORE_BASE64" | base64 -d > android/app/ci-signing.p12
           ls -l android/app/ci-signing.p12
-          keytool -list -keystore android/app/ci-signing.p12 -storetype PKCS12             -storepass "$SIGNING_STORE_PASSWORD" -alias "$SIGNING_KEY_ALIAS" > /dev/null
+          keytool -list -keystore android/app/ci-signing.p12 -storetype PKCS12 -storepass "$SIGNING_STORE_PASSWORD" -alias "$SIGNING_KEY_ALIAS" > /dev/null
           echo "keystore OK"
 
       - name: 写入 local.properties、解锁高级功能并递增 versionCode
