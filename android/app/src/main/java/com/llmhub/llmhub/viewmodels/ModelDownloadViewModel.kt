@@ -43,7 +43,7 @@ data class HuggingFaceModelFile(
     val sizeBytes: Long
 ) {
     val isProjector: Boolean get() = path.contains("mmproj", true) || path.contains("projector", true)
-    val downloadUrl: String get() = "https://huggingface.co/$repo/resolve/main/${path.replace(" ", "%20")}" // Direct HF resolve endpoint.
+    val downloadUrl: String get() = "https://hf-mirror.com/$repo/resolve/main/${path.replace(" ", "%20")}" // Direct HF resolve endpoint.
 }
 
 class ModelDownloadViewModel(application: Application) : AndroidViewModel(application) {
@@ -178,12 +178,12 @@ class ModelDownloadViewModel(application: Application) : AndroidViewModel(applic
         }
         val encoded = java.net.URLEncoder.encode(query, "UTF-8")
         val libraryFilter = if (format == "litertlm") "litert-lm" else format
-        val repos = JsonParser.parseString(request("https://huggingface.co/api/models?search=$encoded&filter=$libraryFilter&limit=20"))
+        val repos = JsonParser.parseString(request("https://hf-mirror.com/api/models?search=$encoded&filter=$libraryFilter&limit=20"))
             .asJsonArray.mapNotNull { it.asJsonObject.get("id")?.asString }
         repos.flatMap { repo ->
             runCatching {
                 val encodedRepo = repo.split("/").joinToString("/") { java.net.URLEncoder.encode(it, "UTF-8") }
-                JsonParser.parseString(request("https://huggingface.co/api/models/$encodedRepo/tree/main?recursive=true&expand=true"))
+                JsonParser.parseString(request("https://hf-mirror.com/api/models/$encodedRepo/tree/main?recursive=true&expand=true"))
                     .asJsonArray.mapNotNull { entry ->
                         val item = entry.asJsonObject
                         val path = item.get("path")?.asString ?: return@mapNotNull null

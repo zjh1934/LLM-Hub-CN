@@ -1,49 +1,80 @@
-name: Build and Release Universal APK
-on: 
-  workflow_dispatch: # Keeps the manual run button just in case
+name: 构建并发布国内源版 APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release 标签
+        required: true
+        default: v4.5.1-cn1
   push:
     tags:
-      - 'v*' # Triggers automatically whenever you push a tag starting with 'v' (e.g., v1.0.0)
+      - 'v*'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     permissions:
-      contents: write # Crucial: Gives GitHub Actions permission to create releases and upload files
+      contents: write
+    env:
+      GRADLE_OPTS: "-Xmx6g -Xms2g -Dorg.gradle.parallel=false -Dorg.gradle.caching=true"
     steps:
-      - name: Checkout Repository
+      - name: 检出代码
         uses: actions/checkout@v4
+        with:
+          submodules: false
+          fetch-depth: 1
 
-      - name: Set up JDK 17
+      - name: 设置 JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
           cache: 'gradle'
 
-      - name: Accept Android Licenses
-        run: |
-          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
-
-      - name: Grant Execute Permission to Gradle
-        run: chmod +x gradlew
-        working-directory: ./android
-
-
-      - name: Build Debug APK with Memory Limits
-        run: ./gradlew assembleDebug -Dorg.gradle.jvmargs="-Xmx3g -XX:MaxMetaspaceSize=512m" --no-daemon
-        working-directory: ./android
-
-      - name: Create GitHub Release and Upload APK
-        uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/') # Only runs this step if it was triggered by a tag push
+      - name: 安装 Android SDK / NDK / CMake
+        uses: android-actions/setup-android@v4
         with:
-          files: '**/build/outputs/apk/debug/*.apk'
-          name: Release ${{ github.ref_name }}
+          cmdline-tools-version: latest
+          accept-android-sdk-licenses: true
+          packages: "platforms;android-36 build-tools;34.0.0 ndk;26.1.10909125 cmake;3.22.1 platform-tools"
+
+      - name: 缓存 Gradle 依赖
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            android/.gradle
+          key: ${{ runner.os }}-gradle-${{ hashFiles('android/gradle/wrapper/gradle-wrapper.properties', 'android/build.gradle.kts', 'android/app/build.gradle.kts') }}
+          restore-keys: ${{ runner.os }}-gradle-
+
+      - name: 写入 local.properties 并解锁高级功能
+        run: |
+          echo "DEBUG_PREMIUM=true" > android/local.properties
+          chmod +x android/gradlew
+
+      - name: 构建 Debug APK
+        working-directory: android
+        run: ./gradlew assembleDebug --no-daemon -Dorg.gradle.jvmargs="-Xmx5g -XX:MaxMetaspaceSize=512m"
+        timeout-minutes: 90
+
+      - name: 上传构建产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug
+          path: android/app/build/outputs/apk/debug/*.apk
+
+      - name: 创建 Release 并上传 APK
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+          name: LLM Hub 国内源版 ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+          files: android/app/build/outputs/apk/debug/*.apk
           body: |
-            Automated standalone universal APK release for ${{ github.ref_name }}.
-            Compiled securely via GitHub Actions with premium features unlocked.
+            LLM Hub 二次开发版：去广告 / 解锁高级功能 + 模型下载源改为 HF-Mirror。
+            保留 LTX-Video 2B 0.9.8 图生视频，含骁龙 8 Gen 3 专用 v75 QNN 包。
+            由 GitHub Actions 自动构建，产物为 debug 签名 APK。
           draft: false
           prerelease: false
-          
-

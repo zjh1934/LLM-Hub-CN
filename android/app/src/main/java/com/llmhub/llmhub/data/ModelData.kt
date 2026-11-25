@@ -139,7 +139,7 @@ object ModelData {
         LLMModel(
             name = "Real-ESRGAN Anime Upscaler (NPU)",
             description = "Real-ESRGAN x4plus anime upscaler optimized for Qualcomm NPU. Upscales anime/illustration images 4x. Requires Snapdragon 8 Gen 1+. ~70 MB download.",
-            url = "https://huggingface.co/xororz/upscaler/resolve/main/realesrgan_x4plus_anime_6b/upscaler_${DeviceInfo.getUpscalerSuffix()}.bin",
+            url = "https://hf-mirror.com/xororz/upscaler/resolve/main/realesrgan_x4plus_anime_6b/upscaler_${DeviceInfo.getUpscalerSuffix()}.bin",
             category = "image_upscale",
             sizeBytes = 0L,
             source = "Real-ESRGAN (QNN via xororz)",
@@ -153,7 +153,7 @@ object ModelData {
         LLMModel(
             name = "UltraSharp Realistic Upscaler (NPU)",
             description = "4x UltraSharpV2 Lite upscaler optimized for Qualcomm NPU. Upscales realistic photos 4x. Requires Snapdragon 8 Gen 1+. ~70 MB download.",
-            url = "https://huggingface.co/xororz/upscaler/resolve/main/4x_UltraSharpV2_Lite/upscaler_${DeviceInfo.getUpscalerSuffix()}.bin",
+            url = "https://hf-mirror.com/xororz/upscaler/resolve/main/4x_UltraSharpV2_Lite/upscaler_${DeviceInfo.getUpscalerSuffix()}.bin",
             category = "image_upscale",
             sizeBytes = 0L,
             source = "4x UltraSharpV2 Lite (QNN via xororz)",
@@ -167,7 +167,7 @@ object ModelData {
         LLMModel(
             name = "Real-ESRGAN General x4v3 (GPU/CPU)",
             description = "Real-ESRGAN general x4v3 upscaler powered by LiteRT. Fast 4x super-resolution with GPU acceleration and automatic CPU fallback. Works on all devices. ~3.5 MB download.",
-            url = "https://huggingface.co/litert-community/real-esrgan-x4v3-litert/resolve/0a6fc35ba3e34e80b53f43089c1d2b612d33bea9/realesr_general_x4v3.tflite",
+            url = "https://hf-mirror.com/litert-community/real-esrgan-x4v3-litert/resolve/0a6fc35ba3e34e80b53f43089c1d2b612d33bea9/realesr_general_x4v3.tflite",
             category = "image_upscale",
             sizeBytes = 3549456L,
             source = "litert-community/real-esrgan-x4v3-litert",
@@ -184,7 +184,7 @@ object ModelData {
         LLMModel(
             name = "Anikawa V4 (NPU)",
             description = "Anikawa V4 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/anikawa_v4_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/anikawa_v4_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3729112783L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -198,7 +198,7 @@ object ModelData {
         LLMModel(
             name = "Animagine V4 (NPU)",
             description = "Animagine V4 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.49 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/animagine_v4_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/animagine_v4_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3752469362L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -212,7 +212,7 @@ object ModelData {
         LLMModel(
             name = "Chenkinnoob V0.5 DMD2 (NPU)",
             description = "Chenkinnoob V0.5 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.22 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/chenkinnoob_v0.5_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/chenkinnoob_v0.5_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3456740577L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -226,7 +226,7 @@ object ModelData {
         LLMModel(
             name = "Chenkinnoob V0.5 (NPU)",
             description = "Chenkinnoob V0.5 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.21 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/chenkinnoob_v0.5_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/chenkinnoob_v0.5_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3448038228L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -240,7 +240,7 @@ object ModelData {
         LLMModel(
             name = "Counterfeit V2.5 (NPU)",
             description = "Counterfeit V2.5 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.49 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/counterfeit_v2.5_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/counterfeit_v2.5_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3750506037L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -254,7 +254,7 @@ object ModelData {
         LLMModel(
             name = "Cyber Realistic V10 DMD2 (NPU)",
             description = "Cyber Realistic V10 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.49 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/cyber_realistic_v10_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/cyber_realistic_v10_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3745395451L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -268,7 +268,7 @@ object ModelData {
         LLMModel(
             name = "Cyber Realistic V10 (NPU)",
             description = "Cyber Realistic V10 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.49 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/cyber_realistic_v10_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/cyber_realistic_v10_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3745235842L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -282,7 +282,7 @@ object ModelData {
         LLMModel(
             name = "Dreamshaper (NPU)",
             description = "Dreamshaper SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.50 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/dreamshaper_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/dreamshaper_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3753755544L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -296,7 +296,7 @@ object ModelData {
         LLMModel(
             name = "Epic Realism (NPU)",
             description = "Epic Realism SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.26 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/epic_realism_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/epic_realism_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3502991005L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -310,7 +310,7 @@ object ModelData {
         LLMModel(
             name = "Furrytoonmix V3 (NPU)",
             description = "Furrytoonmix V3 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/furrytoonmix_v3_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/furrytoonmix_v3_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3728917179L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -324,7 +324,7 @@ object ModelData {
         LLMModel(
             name = "Gonzalomo V7 DMD2 (NPU)",
             description = "Gonzalomo V7 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.49 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/gonzalomo_v7_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/gonzalomo_v7_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3746696804L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -338,7 +338,7 @@ object ModelData {
         LLMModel(
             name = "Gonzalomo V7 (NPU)",
             description = "Gonzalomo V7 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.49 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/gonzalomo_v7_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/gonzalomo_v7_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3748103946L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -352,7 +352,7 @@ object ModelData {
         LLMModel(
             name = "Illustrij V21 (NPU)",
             description = "Illustrij V21 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.46 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrij_v21_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrij_v21_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3716099909L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -366,7 +366,7 @@ object ModelData {
         LLMModel(
             name = "Illustrious V16 DMD2 (NPU)",
             description = "Illustrious V16 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrious_v16_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrious_v16_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3722127035L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -380,7 +380,7 @@ object ModelData {
         LLMModel(
             name = "Illustrious V16 (NPU)",
             description = "Illustrious V16 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrious_v16_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrious_v16_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3726876852L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -394,7 +394,7 @@ object ModelData {
         LLMModel(
             name = "Illustrious V17 DMD2 (NPU)",
             description = "Illustrious V17 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.46 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrious_v17_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrious_v17_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3720464362L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -408,7 +408,7 @@ object ModelData {
         LLMModel(
             name = "Illustrious V17 (NPU)",
             description = "Illustrious V17 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrious_v17_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/illustrious_v17_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3723557978L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -422,7 +422,7 @@ object ModelData {
         LLMModel(
             name = "Intorealism Ultra V11 (NPU)",
             description = "Intorealism Ultra V11 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.49 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/intorealism_ultra_v11_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/intorealism_ultra_v11_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3745911651L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -436,7 +436,7 @@ object ModelData {
         LLMModel(
             name = "Juggernaut DMD2 (NPU)",
             description = "Juggernaut DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.49 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/juggernaut_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/juggernaut_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3748655389L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -450,7 +450,7 @@ object ModelData {
         LLMModel(
             name = "Juggernaut (NPU)",
             description = "Juggernaut SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.49 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/juggernaut_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/juggernaut_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3747687306L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -464,7 +464,7 @@ object ModelData {
         LLMModel(
             name = "Lemonsugarmix V3 (NPU)",
             description = "Lemonsugarmix V3 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/lemonsugarmix_v3_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/lemonsugarmix_v3_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3722930867L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -478,7 +478,7 @@ object ModelData {
         LLMModel(
             name = "Miaomiao Harem V2 (NPU)",
             description = "Miaomiao Harem V2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.21 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/miaomiao_harem_v2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/miaomiao_harem_v2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3445585440L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -492,7 +492,7 @@ object ModelData {
         LLMModel(
             name = "Miaomiao Realskin V1.4 (NPU)",
             description = "Miaomiao Realskin V1.4 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.22 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/miaomiao_realskin_v1.4_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/miaomiao_realskin_v1.4_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3461578277L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -506,7 +506,7 @@ object ModelData {
         LLMModel(
             name = "Noobai Vpred (NPU)",
             description = "Noobai Vpred SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.21 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/noobai_vpred_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/noobai_vpred_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3443971931L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -520,7 +520,7 @@ object ModelData {
         LLMModel(
             name = "Nova Orange Rex V1 (NPU)",
             description = "Nova Orange Rex V1 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/nova_orange_rex_v1_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/nova_orange_rex_v1_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3723477809L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -534,7 +534,7 @@ object ModelData {
         LLMModel(
             name = "Novaanime V18 (NPU)",
             description = "Novaanime V18 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/novaanime_v18_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/novaanime_v18_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3724396542L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -548,7 +548,7 @@ object ModelData {
         LLMModel(
             name = "Novaanime V19 DMD2 (NPU)",
             description = "Novaanime V19 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/novaanime_v19_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/novaanime_v19_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3733213121L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -562,7 +562,7 @@ object ModelData {
         LLMModel(
             name = "Novaanime V19 (NPU)",
             description = "Novaanime V19 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/novaanime_v19_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/novaanime_v19_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3732162768L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -576,7 +576,7 @@ object ModelData {
         LLMModel(
             name = "Novafurry V18 (NPU)",
             description = "Novafurry V18 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/novafurry_v18_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/novafurry_v18_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3724017895L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -590,7 +590,7 @@ object ModelData {
         LLMModel(
             name = "Perfect Deliberate V9 (NPU)",
             description = "Perfect Deliberate V9 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/perfect_deliberate_v9_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/perfect_deliberate_v9_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3724959205L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -604,7 +604,7 @@ object ModelData {
         LLMModel(
             name = "Perfection Realistic V8 (NPU)",
             description = "Perfection Realistic V8 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/perfection_realistic_v8_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/perfection_realistic_v8_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3735902139L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -618,7 +618,7 @@ object ModelData {
         LLMModel(
             name = "Ponydiffusion V6XL (NPU)",
             description = "Ponydiffusion V6XL SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/ponydiffusion_v6xl_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/ponydiffusion_v6xl_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3725876252L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -632,7 +632,7 @@ object ModelData {
         LLMModel(
             name = "Pppanimix V20 (NPU)",
             description = "Pppanimix V20 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/pppanimix_v20_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/pppanimix_v20_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3731176662L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -646,7 +646,7 @@ object ModelData {
         LLMModel(
             name = "Prefect Illustrious V8 (NPU)",
             description = "Prefect Illustrious V8 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/prefect_illustrious_v8_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/prefect_illustrious_v8_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3732606258L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -660,7 +660,7 @@ object ModelData {
         LLMModel(
             name = "Raehoshi V10 DMD2 (NPU)",
             description = "Raehoshi V10 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/raehoshi_v10_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/raehoshi_v10_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3739505928L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -674,7 +674,7 @@ object ModelData {
         LLMModel(
             name = "Raehoshi V10 (NPU)",
             description = "Raehoshi V10 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/raehoshi_v10_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/raehoshi_v10_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3737860487L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -688,7 +688,7 @@ object ModelData {
         LLMModel(
             name = "Realvis XL V5 DMD2 (NPU)",
             description = "Realvis XL V5 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.26 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/realvis_xl_v5_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/realvis_xl_v5_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3504486107L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -702,7 +702,7 @@ object ModelData {
         LLMModel(
             name = "Realvis XL V5 (NPU)",
             description = "Realvis XL V5 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.26 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/realvis_xl_v5_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/realvis_xl_v5_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3499694289L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -716,7 +716,7 @@ object ModelData {
         LLMModel(
             name = "Reed Xxx V14 (NPU)",
             description = "Reed Xxx V14 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/reed_xxx_v14_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/reed_xxx_v14_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3727643206L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -730,7 +730,7 @@ object ModelData {
         LLMModel(
             name = "Rin Anime Blend V4 (NPU)",
             description = "Rin Anime Blend V4 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.47 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_anime_blend_v4_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_anime_blend_v4_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3727548766L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -744,7 +744,7 @@ object ModelData {
         LLMModel(
             name = "Rin Animepopcute V4 DMD2 (NPU)",
             description = "Rin Animepopcute V4 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_animepopcute_v4_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_animepopcute_v4_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3736410551L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -758,7 +758,7 @@ object ModelData {
         LLMModel(
             name = "Rin Animepopcute V4 (NPU)",
             description = "Rin Animepopcute V4 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_animepopcute_v4_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_animepopcute_v4_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3735458342L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -772,7 +772,7 @@ object ModelData {
         LLMModel(
             name = "Rin Featherfall V4 (NPU)",
             description = "Rin Featherfall V4 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_featherfall_v4_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_featherfall_v4_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3736269305L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -786,7 +786,7 @@ object ModelData {
         LLMModel(
             name = "Rin Flanime V4 DMD2 (NPU)",
             description = "Rin Flanime V4 DMD2 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_flanime_v4_dmd2_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_flanime_v4_dmd2_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3735667929L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -800,7 +800,7 @@ object ModelData {
         LLMModel(
             name = "Rin Flanime V4 (NPU)",
             description = "Rin Flanime V4 SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.48 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_flanime_v4_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/rin_flanime_v4_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3734846226L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -814,7 +814,7 @@ object ModelData {
         LLMModel(
             name = "SDXL Base (NPU)",
             description = "SDXL Base SDXL model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 1024x1024 resolution. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.50 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/sdxl_base_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/sdxl-qnn/resolve/ead90f4635e21e7412b8200a5efd220b0193beeb/sdxl_base_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 3753226114L,
             source = "Stable Diffusion XL (QNN SDK via xororz)",
@@ -828,7 +828,7 @@ object ModelData {
        LLMModel(
            name = "Anima Base V1 Turbo (NPU)",
            description = "Anima Base V1 Turbo model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~4.00 GB download from HuggingFace.",
-           url = "https://huggingface.co/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/anima_base_v1_turbo_qnn2.28_8gen3.zip",
+           url = "https://hf-mirror.com/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/anima_base_v1_turbo_qnn2.28_8gen3.zip",
            category = "image_generation",
            sizeBytes = 4290828128L,
            source = "Stable Diffusion (QNN SDK via xororz)",
@@ -842,7 +842,7 @@ object ModelData {
        LLMModel(
            name = "Animayume V1 Turbo (NPU)",
            description = "Animayume V1 Turbo model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.99 GB download from HuggingFace.",
-           url = "https://huggingface.co/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/animayume_v1_turbo_qnn2.28_8gen3.zip",
+           url = "https://hf-mirror.com/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/animayume_v1_turbo_qnn2.28_8gen3.zip",
            category = "image_generation",
            sizeBytes = 4287096388L,
            source = "Stable Diffusion (QNN SDK via xororz)",
@@ -856,7 +856,7 @@ object ModelData {
         LLMModel(
             name = "CyberRealistic V3 Turbo (NPU)",
             description = "CyberRealistic V3 Turbo model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~4.52 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/cyberrealistic_v3_turbo_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/cyberrealistic_v3_turbo_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 4853683064L,
             source = "Stable Diffusion (QNN SDK via xororz)",
@@ -870,7 +870,7 @@ object ModelData {
         LLMModel(
             name = "Miaomiao V1.4 Turbo (NPU)",
             description = "Miaomiao V1.4 Turbo model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~4.00 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/miaomiao_v1.4_turbo_qnn2.28_8gen3.zip",
+            url = "https://hf-mirror.com/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/miaomiao_v1.4_turbo_qnn2.28_8gen3.zip",
             category = "image_generation",
             sizeBytes = 4299044507L,
             source = "Stable Diffusion (QNN SDK via xororz)",
@@ -884,7 +884,7 @@ object ModelData {
        LLMModel(
            name = "Nova Anime V2.5 Turbo (NPU)",
            description = "Nova Anime V2.5 Turbo model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~4.00 GB download from HuggingFace.",
-           url = "https://huggingface.co/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/novaanime_v2.5_turbo_qnn2.28_8gen3.zip",
+           url = "https://hf-mirror.com/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/novaanime_v2.5_turbo_qnn2.28_8gen3.zip",
            category = "image_generation",
            sizeBytes = 4290744025L,
            source = "Stable Diffusion (QNN SDK via xororz)",
@@ -898,7 +898,7 @@ object ModelData {
        LLMModel(
            name = "Nova Anime V3 Turbo (NPU)",
            description = "Nova Anime V3 Turbo model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~4.00 GB download from HuggingFace.",
-           url = "https://huggingface.co/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/novaanime_v3_turbo_qnn2.28_8gen3.zip",
+           url = "https://hf-mirror.com/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/novaanime_v3_turbo_qnn2.28_8gen3.zip",
            category = "image_generation",
            sizeBytes = 4292018537L,
            source = "Stable Diffusion (QNN SDK via xororz)",
@@ -912,7 +912,7 @@ object ModelData {
        LLMModel(
            name = "Rin Flanime V1 Turbo (NPU)",
            description = "Rin Flanime V1 Turbo model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~4.52 GB download from HuggingFace.",
-           url = "https://huggingface.co/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/rin_flanime_v1_turbo_qnn2.28_8gen3.zip",
+           url = "https://hf-mirror.com/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/rin_flanime_v1_turbo_qnn2.28_8gen3.zip",
            category = "image_generation",
            sizeBytes = 4854654219L,
            source = "Stable Diffusion (QNN SDK via xororz)",
@@ -926,7 +926,7 @@ object ModelData {
        LLMModel(
            name = "Sam Anima Realistic V2.3 Turbo (NPU)",
            description = "Sam Anima Realistic V2.3 Turbo model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~4.00 GB download from HuggingFace.",
-           url = "https://huggingface.co/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/sam_anima_realistic_v2.3_turbo_qnn2.28_8gen3.zip",
+           url = "https://hf-mirror.com/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/sam_anima_realistic_v2.3_turbo_qnn2.28_8gen3.zip",
            category = "image_generation",
            sizeBytes = 4290163015L,
            source = "Stable Diffusion (QNN SDK via xororz)",
@@ -940,7 +940,7 @@ object ModelData {
        LLMModel(
            name = "Wai Anima V1 Turbo (NPU)",
            description = "Wai Anima V1 Turbo model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation. Requires Snapdragon 8 Gen 3 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~3.99 GB download from HuggingFace.",
-           url = "https://huggingface.co/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/wai_anima_v1_turbo_qnn2.28_8gen3.zip",
+           url = "https://hf-mirror.com/xororz/anima-qnn/resolve/69016e97f681a6de9aa34e55222c2ba697b7ec8e/wai_anima_v1_turbo_qnn2.28_8gen3.zip",
            category = "image_generation",
            sizeBytes = 4281870655L,
            source = "Stable Diffusion (QNN SDK via xororz)",
@@ -999,7 +999,7 @@ object ModelData {
         LLMModel(
             name = "Kokoro-82M (ONNX Quantized)",
             description = "8-bit integer quantized Kokoro-82M ONNX model. Good balance of speed and size. ~92 MB download.",
-            url = "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/onnx/model_quantized.onnx",
+            url = "https://hf-mirror.com/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/onnx/model_quantized.onnx",
             category = "tts",
             sizeBytes = 92361116L,
             source = "hexgrad (ONNX Community)",
@@ -1010,15 +1010,15 @@ object ModelData {
             contextWindowSize = 0,
             modelFormat = "onnx",
             additionalFiles = listOf(
-                "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/tokenizer.json",
-                "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/config.json",
+                "https://hf-mirror.com/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/tokenizer.json",
+                "https://hf-mirror.com/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/config.json",
                 "https://raw.githubusercontent.com/puff-dayo/Kokoro-82M-Android/latest/app/src/main/res/raw/cmudict_ipa.dict"
             )
         ),
         LLMModel(
             name = "Kokoro-82M (ONNX FP32)",
             description = "Full-precision floating-point Kokoro-82M ONNX model. Maximum quality speech synthesis. ~326 MB download.",
-            url = "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/onnx/model.onnx",
+            url = "https://hf-mirror.com/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/onnx/model.onnx",
             category = "tts",
             sizeBytes = 325532232L,
             source = "hexgrad (ONNX Community)",
@@ -1029,8 +1029,8 @@ object ModelData {
             contextWindowSize = 0,
             modelFormat = "onnx",
             additionalFiles = listOf(
-                "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/tokenizer.json",
-                "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/config.json",
+                "https://hf-mirror.com/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/tokenizer.json",
+                "https://hf-mirror.com/onnx-community/Kokoro-82M-v1.0-ONNX/resolve/468588286ebb2dd77c25b9771e5d165896538cce/config.json",
                 "https://raw.githubusercontent.com/puff-dayo/Kokoro-82M-Android/latest/app/src/main/res/raw/cmudict_ipa.dict"
             )
         )
@@ -1041,7 +1041,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3 1B (INT4, 2k)",
             description = "Google Gemma-3 1B with INT4 quantization and a 2k context window. Optimized for mobile devices. Ready to download from HuggingFace (529MB)",
-            url = "https://huggingface.co/litert-community/Gemma3-1B-IT/resolve/main/Gemma3-1B-IT_multi-prefill-seq_q4_ekv2048.task?download=true",
+            url = "https://hf-mirror.com/litert-community/Gemma3-1B-IT/resolve/main/Gemma3-1B-IT_multi-prefill-seq_q4_ekv2048.task?download=true",
             category = "text",
             sizeBytes = 554661246L, // 529MB (actual size from HuggingFace)
             source = "Google via LiteRT Community",
@@ -1054,7 +1054,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3 1B (INT8, 1.2k)",
             description = "Higher quality INT8 version of Gemma-3 1B with a 1.2k context window. Ready to download from HuggingFace (1005MB)",
-            url = "https://huggingface.co/litert-community/Gemma3-1B-IT/resolve/main/Gemma3-1B-IT_multi-prefill-seq_q8_ekv1280.task?download=true",
+            url = "https://hf-mirror.com/litert-community/Gemma3-1B-IT/resolve/main/Gemma3-1B-IT_multi-prefill-seq_q8_ekv1280.task?download=true",
             category = "text",
             sizeBytes = 1054012582L, // 1005MB (actual size from HuggingFace)
             source = "Google via LiteRT Community",
@@ -1067,7 +1067,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3 1B (INT8, 2k)",
             description = "Higher quality INT8 version of Gemma-3 1B with a 2k context window. Ready to download from HuggingFace (1024MB)",
-            url = "https://huggingface.co/litert-community/Gemma3-1B-IT/resolve/main/Gemma3-1B-IT_multi-prefill-seq_q8_ekv2048.task?download=true",
+            url = "https://hf-mirror.com/litert-community/Gemma3-1B-IT/resolve/main/Gemma3-1B-IT_multi-prefill-seq_q8_ekv2048.task?download=true",
             category = "text",
             sizeBytes = 1073765694L, // 1024MB (actual size from HuggingFace)
             source = "Google via LiteRT Community",
@@ -1080,7 +1080,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3 1B (INT8, 4k)",
             description = "Higher quality INT8 version of Gemma-3 1B with a large 4k context window. Ready to download from HuggingFace (1005MB)",
-            url = "https://huggingface.co/litert-community/Gemma3-1B-IT/resolve/main/Gemma3-1B-IT_multi-prefill-seq_q8_ekv4096.task?download=true",
+            url = "https://hf-mirror.com/litert-community/Gemma3-1B-IT/resolve/main/Gemma3-1B-IT_multi-prefill-seq_q8_ekv4096.task?download=true",
             category = "text",
             sizeBytes = 1054023846L, // 1005MB (actual size from HuggingFace)
             source = "Google via LiteRT Community",
@@ -1095,7 +1095,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (INT8)",
             description = "Meta's Llama 3.2 1B model with INT8 quantization. Optimized for on-device inference. Ready to download from HuggingFace (2.01GB)",
-            url = "https://huggingface.co/vimal-yuvabe/llama-3.2-1b-tflite/resolve/main/llama-3.2-1b-q8.task?download=true",
+            url = "https://hf-mirror.com/vimal-yuvabe/llama-3.2-1b-tflite/resolve/main/llama-3.2-1b-q8.task?download=true",
             category = "text",
             sizeBytes = 2160086757L, // 2.01GB (actual size from HuggingFace)
             source = "Meta via vimal-yuvabe",
@@ -1109,7 +1109,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (INT8)",
             description = "Meta's Llama 3.2 3B model with INT8 quantization. Larger model for better performance. Ready to download from HuggingFace (5.11GB)",
-            url = "https://huggingface.co/vimal-yuvabe/llama-3.2-3b-tflite/resolve/main/llama-3.2-3B-q8.task?download=true",
+            url = "https://hf-mirror.com/vimal-yuvabe/llama-3.2-3b-tflite/resolve/main/llama-3.2-3B-q8.task?download=true",
             category = "text",
             sizeBytes = 5491473637L, // 5.11GB (actual size from HuggingFace)
             source = "Meta via vimal-yuvabe",
@@ -1124,7 +1124,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (IQ3_M)",
             description = "Llama 3.2 1B with IQ3_M quantization. Smallest size, great for low-memory devices. 128k context. (657MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-IQ3_M.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-IQ3_M.gguf?download=true",
             category = "text",
             sizeBytes = 657000000L, // 657 MB
             source = "Meta via bartowski",
@@ -1137,7 +1137,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (IQ4_XS)",
             description = "Llama 3.2 1B with IQ4_XS quantization. Optimized 4-bit. 128k context. (743MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-IQ4_XS.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-IQ4_XS.gguf?download=true",
             category = "text",
             sizeBytes = 743000000L, // 743 MB
             source = "Meta via bartowski",
@@ -1150,7 +1150,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q3_K_L)",
             description = "Llama 3.2 1B with Q3_K_L quantization. Large 3-bit variant. 128k context. (733MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q3_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q3_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 733000000L, // 733 MB
             source = "Meta via bartowski",
@@ -1163,7 +1163,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q3_K_XL)",
             description = "Llama 3.2 1B with Q3_K_XL quantization. Extra-large 3-bit variant. 128k context. (796MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q3_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q3_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 796000000L, // 796 MB
             source = "Meta via bartowski",
@@ -1176,7 +1176,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q4_0)",
             description = "Llama 3.2 1B with Q4_0 quantization. Standard 4-bit, good balance. 128k context. (773MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 773000000L, // 773 MB
             source = "Meta via bartowski",
@@ -1189,7 +1189,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q4_0_4_4)",
             description = "Llama 3.2 1B with Q4_0_4_4 quantization. 4-bit ARM-optimized. 128k context. (771MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_0_4_4.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_0_4_4.gguf?download=true",
             category = "text",
             sizeBytes = 771000000L, // 771 MB
             source = "Meta via bartowski",
@@ -1202,7 +1202,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q4_0_4_8)",
             description = "Llama 3.2 1B with Q4_0_4_8 quantization. 4-bit ARM-optimized. 128k context. (771MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_0_4_8.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_0_4_8.gguf?download=true",
             category = "text",
             sizeBytes = 771000000L, // 771 MB
             source = "Meta via bartowski",
@@ -1215,7 +1215,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q4_0_8_8)",
             description = "Llama 3.2 1B with Q4_0_8_8 quantization. 4-bit ARM-optimized. 128k context. (771MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_0_8_8.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_0_8_8.gguf?download=true",
             category = "text",
             sizeBytes = 771000000L, // 771 MB
             source = "Meta via bartowski",
@@ -1228,7 +1228,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q4_K_L)",
             description = "Llama 3.2 1B with Q4_K_L quantization. Large K-quant 4-bit. 128k context. (871MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 871000000L, // 871 MB
             source = "Meta via bartowski",
@@ -1241,7 +1241,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q4_K_M)",
             description = "Llama 3.2 1B with Q4_K_M quantization. Medium K-quant 4-bit, recommended. 128k context. (808MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 808000000L, // 808 MB
             source = "Meta via bartowski",
@@ -1254,7 +1254,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q4_K_S)",
             description = "Llama 3.2 1B with Q4_K_S quantization. Small K-quant 4-bit. 128k context. (776MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 776000000L, // 776 MB
             source = "Meta via bartowski",
@@ -1267,7 +1267,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q5_K_L)",
             description = "Llama 3.2 1B with Q5_K_L quantization. Large K-quant 5-bit. 128k context. (975MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q5_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q5_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 975000000L, // 975 MB
             source = "Meta via bartowski",
@@ -1280,7 +1280,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q5_K_M)",
             description = "Llama 3.2 1B with Q5_K_M quantization. Medium K-quant 5-bit, high quality. 128k context. (912MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 912000000L, // 912 MB
             source = "Meta via bartowski",
@@ -1293,7 +1293,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q5_K_S)",
             description = "Llama 3.2 1B with Q5_K_S quantization. Small K-quant 5-bit. 128k context. (893MB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q5_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q5_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 893000000L, // 893 MB
             source = "Meta via bartowski",
@@ -1306,7 +1306,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q6_K)",
             description = "Llama 3.2 1B with Q6_K quantization. 6-bit, very high quality. 128k context. (1.02GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 1020000000L, // 1.02 GB
             source = "Meta via bartowski",
@@ -1319,7 +1319,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q6_K_L)",
             description = "Llama 3.2 1B with Q6_K_L quantization. Large 6-bit, highest quality. 128k context. (1.09GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q6_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q6_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 1090000000L, // 1.09 GB
             source = "Meta via bartowski",
@@ -1332,7 +1332,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (Q8_0)",
             description = "Llama 3.2 1B with Q8_0 quantization. 8-bit, near-original quality. 128k context. (1.32GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 1320000000L, // 1.32 GB
             source = "Meta via bartowski",
@@ -1345,7 +1345,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 1B (f16)",
             description = "Llama 3.2 1B with f16 (full precision). Maximum quality, largest size. 128k context. (2.48GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-f16.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-f16.gguf?download=true",
             category = "text",
             sizeBytes = 2480000000L, // 2.48 GB
             source = "Meta via bartowski",
@@ -1360,7 +1360,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (IQ3_M)",
             description = "Llama 3.2 3B with IQ3_M quantization. Smallest size, great for low-memory devices. 128k context. (1.6GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-IQ3_M.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-IQ3_M.gguf?download=true",
             category = "text",
             sizeBytes = 1600000000L, // 1.6 GB
             source = "Meta via bartowski",
@@ -1373,7 +1373,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (IQ4_XS)",
             description = "Llama 3.2 3B with IQ4_XS quantization. Optimized 4-bit. 128k context. (1.83GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-IQ4_XS.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-IQ4_XS.gguf?download=true",
             category = "text",
             sizeBytes = 1830000000L, // 1.83 GB
             source = "Meta via bartowski",
@@ -1386,7 +1386,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q3_K_L)",
             description = "Llama 3.2 3B with Q3_K_L quantization. Large 3-bit variant. 128k context. (1.82GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q3_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q3_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 1820000000L, // 1.82 GB
             source = "Meta via bartowski",
@@ -1399,7 +1399,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q3_K_XL)",
             description = "Llama 3.2 3B with Q3_K_XL quantization. Extra-large 3-bit variant. 128k context. (1.91GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q3_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q3_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 1910000000L, // 1.91 GB
             source = "Meta via bartowski",
@@ -1412,7 +1412,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q4_0)",
             description = "Llama 3.2 3B with Q4_0 quantization. Standard 4-bit, good balance. 128k context. (1.92GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 1920000000L, // 1.92 GB
             source = "Meta via bartowski",
@@ -1425,7 +1425,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q4_0_4_4)",
             description = "Llama 3.2 3B with Q4_0_4_4 quantization. 4-bit ARM-optimized. 128k context. (1.92GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_0_4_4.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_0_4_4.gguf?download=true",
             category = "text",
             sizeBytes = 1920000000L, // 1.92 GB
             source = "Meta via bartowski",
@@ -1438,7 +1438,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q4_0_4_8)",
             description = "Llama 3.2 3B with Q4_0_4_8 quantization. 4-bit ARM-optimized. 128k context. (1.92GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_0_4_8.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_0_4_8.gguf?download=true",
             category = "text",
             sizeBytes = 1920000000L, // 1.92 GB
             source = "Meta via bartowski",
@@ -1451,7 +1451,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q4_0_8_8)",
             description = "Llama 3.2 3B with Q4_0_8_8 quantization. 4-bit ARM-optimized. 128k context. (1.92GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_0_8_8.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_0_8_8.gguf?download=true",
             category = "text",
             sizeBytes = 1920000000L, // 1.92 GB
             source = "Meta via bartowski",
@@ -1464,7 +1464,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q4_K_L)",
             description = "Llama 3.2 3B with Q4_K_L quantization. Large K-quant 4-bit. 128k context. (2.11GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 2110000000L, // 2.11 GB
             source = "Meta via bartowski",
@@ -1477,7 +1477,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q4_K_M)",
             description = "Llama 3.2 3B with Q4_K_M quantization. Medium K-quant 4-bit, recommended. 128k context. (2.02GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 2020000000L, // 2.02 GB
             source = "Meta via bartowski",
@@ -1490,7 +1490,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q4_K_S)",
             description = "Llama 3.2 3B with Q4_K_S quantization. Small K-quant 4-bit. 128k context. (1.93GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 1930000000L, // 1.93 GB
             source = "Meta via bartowski",
@@ -1503,7 +1503,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q5_K_L)",
             description = "Llama 3.2 3B with Q5_K_L quantization. Large K-quant 5-bit. 128k context. (2.42GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q5_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q5_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 2420000000L, // 2.42 GB
             source = "Meta via bartowski",
@@ -1516,7 +1516,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q5_K_M)",
             description = "Llama 3.2 3B with Q5_K_M quantization. Medium K-quant 5-bit, high quality. 128k context. (2.32GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 2320000000L, // 2.32 GB
             source = "Meta via bartowski",
@@ -1529,7 +1529,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q5_K_S)",
             description = "Llama 3.2 3B with Q5_K_S quantization. Small K-quant 5-bit. 128k context. (2.27GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q5_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q5_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 2270000000L, // 2.27 GB
             source = "Meta via bartowski",
@@ -1542,7 +1542,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q6_K)",
             description = "Llama 3.2 3B with Q6_K quantization. 6-bit, very high quality. 128k context. (2.64GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 2640000000L, // 2.64 GB
             source = "Meta via bartowski",
@@ -1555,7 +1555,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q6_K_L)",
             description = "Llama 3.2 3B with Q6_K_L quantization. Large 6-bit, highest quality. 128k context. (2.74GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q6_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q6_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 2740000000L, // 2.74 GB
             source = "Meta via bartowski",
@@ -1568,7 +1568,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (Q8_0)",
             description = "Llama 3.2 3B with Q8_0 quantization. 8-bit, near-original quality. 128k context. (3.42GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 3420000000L, // 3.42 GB
             source = "Meta via bartowski",
@@ -1581,7 +1581,7 @@ object ModelData {
         LLMModel(
             name = "Llama-3.2 3B (f16)",
             description = "Llama 3.2 3B with f16 (full precision). Maximum quality, largest size. 128k context. (6.43GB)",
-            url = "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-f16.gguf?download=true",
+            url = "https://hf-mirror.com/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-f16.gguf?download=true",
             category = "text",
             sizeBytes = 6430000000L, // 6.43 GB
             source = "Meta via bartowski",
@@ -1596,7 +1596,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q2_K)",
             description = "IBM Granite 4.0 H-Tiny with Q2_K quantization. Smallest size. 128k context. (2.59GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q2_K.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q2_K.gguf?download=true",
             category = "text",
             sizeBytes = 2590000000L, // 2.59 GB
             source = "IBM Granite",
@@ -1609,7 +1609,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q3_K_S)",
             description = "IBM Granite 4.0 H-Tiny with Q3_K_S quantization. Balanced size. 128k context. (3.06GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q3_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q3_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 3060000000L, // 3.06 GB
             source = "IBM Granite",
@@ -1622,7 +1622,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q3_K_M)",
             description = "IBM Granite 4.0 H-Tiny with Q3_K_M quantization. Good quality. 128k context. (3.35GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q3_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q3_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 3350000000L, // 3.35 GB
             source = "IBM Granite",
@@ -1635,7 +1635,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q3_K_L)",
             description = "IBM Granite 4.0 H-Tiny with Q3_K_L quantization. Better quality. 128k context. (3.6GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q3_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q3_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 3600000000L, // 3.6 GB
             source = "IBM Granite",
@@ -1648,7 +1648,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q4_0)",
             description = "IBM Granite 4.0 H-Tiny with Q4_0 quantization. Good balance. 128k context. (3.96GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 3960000000L, // 3.96 GB
             source = "IBM Granite",
@@ -1661,7 +1661,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q4_K_S)",
             description = "IBM Granite 4.0 H-Tiny with Q4_K_S quantization. High quality. 128k context. (4GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q4_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q4_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 4000000000L, // 4 GB
             source = "IBM Granite",
@@ -1674,7 +1674,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q4_K_M)",
             description = "IBM Granite 4.0 H-Tiny with Q4_K_M quantization. Very high quality. 128k context. (4.23GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 4230000000L, // 4.23 GB
             source = "IBM Granite",
@@ -1687,7 +1687,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q4_1)",
             description = "IBM Granite 4.0 H-Tiny with Q4_1 quantization. Enhanced quality. 128k context. (4.39GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q4_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q4_1.gguf?download=true",
             category = "text",
             sizeBytes = 4390000000L, // 4.39 GB
             source = "IBM Granite",
@@ -1700,7 +1700,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q5_K_S)",
             description = "IBM Granite 4.0 H-Tiny with Q5_K_S quantization. Excellent quality. 128k context. (4.81GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q5_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q5_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 4810000000L, // 4.81 GB
             source = "IBM Granite",
@@ -1713,7 +1713,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q5_0)",
             description = "IBM Granite 4.0 H-Tiny with Q5_0 quantization. Near-lossless. 128k context. (4.81GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q5_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q5_0.gguf?download=true",
             category = "text",
             sizeBytes = 4810000000L, // 4.81 GB
             source = "IBM Granite",
@@ -1726,7 +1726,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q5_K_M)",
             description = "IBM Granite 4.0 H-Tiny with Q5_K_M quantization. Superior quality. 128k context. (4.95GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 4950000000L, // 4.95 GB
             source = "IBM Granite",
@@ -1739,7 +1739,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q5_1)",
             description = "IBM Granite 4.0 H-Tiny with Q5_1 quantization. Premium quality. 128k context. (5.23GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q5_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q5_1.gguf?download=true",
             category = "text",
             sizeBytes = 5230000000L, // 5.23 GB
             source = "IBM Granite",
@@ -1752,7 +1752,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q6_K)",
             description = "IBM Granite 4.0 H-Tiny with Q6_K quantization. Outstanding quality. 128k context. (5.71GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 5710000000L, // 5.71 GB
             source = "IBM Granite",
@@ -1765,7 +1765,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (Q8_0)",
             description = "IBM Granite 4.0 H-Tiny with Q8_0 quantization. Ultimate quality. 128k context. (7.39GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 7390000000L, // 7.39 GB
             source = "IBM Granite",
@@ -1778,7 +1778,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Tiny (f16)",
             description = "IBM Granite 4.0 H-Tiny with f16 (full precision). Maximum quality, largest size. 128k context. (13.9GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-f16.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-f16.gguf?download=true",
             category = "text",
             sizeBytes = 13900000000L, // 13.9 GB
             source = "IBM Granite",
@@ -1793,7 +1793,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q2_K)",
             description = "IBM Granite 4.0 H-Small with Q2_K quantization. Smallest size. 128k context. (11.8GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q2_K.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q2_K.gguf?download=true",
             category = "text",
             sizeBytes = 11800000000L, // 11.8 GB
             source = "IBM Granite",
@@ -1806,7 +1806,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q3_K_S)",
             description = "IBM Granite 4.0 H-Small with Q3_K_S quantization. Balanced size. 128k context. (14.1GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q3_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q3_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 14100000000L, // 14.1 GB
             source = "IBM Granite",
@@ -1819,7 +1819,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q3_K_M)",
             description = "IBM Granite 4.0 H-Small with Q3_K_M quantization. Good quality. 128k context. (15.4GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q3_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q3_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 15400000000L, // 15.4 GB
             source = "IBM Granite",
@@ -1832,7 +1832,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q3_K_L)",
             description = "IBM Granite 4.0 H-Small with Q3_K_L quantization. Better quality. 128k context. (16.5GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q3_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q3_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 16500000000L, // 16.5 GB
             source = "IBM Granite",
@@ -1845,7 +1845,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q4_0)",
             description = "IBM Granite 4.0 H-Small with Q4_0 quantization. Good balance. 128k context. (18.3GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 18300000000L, // 18.3 GB
             source = "IBM Granite",
@@ -1858,7 +1858,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q4_K_S)",
             description = "IBM Granite 4.0 H-Small with Q4_K_S quantization. High quality. 128k context. (18.4GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q4_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q4_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 18400000000L, // 18.4 GB
             source = "IBM Granite",
@@ -1871,7 +1871,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q4_K_M)",
             description = "IBM Granite 4.0 H-Small with Q4_K_M quantization. Very high quality. 128k context. (19.5GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 19500000000L, // 19.5 GB
             source = "IBM Granite",
@@ -1884,7 +1884,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q4_1)",
             description = "IBM Granite 4.0 H-Small with Q4_1 quantization. Enhanced quality. 128k context. (20.3GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q4_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q4_1.gguf?download=true",
             category = "text",
             sizeBytes = 20300000000L, // 20.3 GB
             source = "IBM Granite",
@@ -1897,7 +1897,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q5_0)",
             description = "IBM Granite 4.0 H-Small with Q5_0 quantization. Near-lossless. 128k context. (22.2GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q5_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q5_0.gguf?download=true",
             category = "text",
             sizeBytes = 22200000000L, // 22.2 GB
             source = "IBM Granite",
@@ -1910,7 +1910,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q5_K_S)",
             description = "IBM Granite 4.0 H-Small with Q5_K_S quantization. Excellent quality. 128k context. (22.2GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q5_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q5_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 22200000000L, // 22.2 GB
             source = "IBM Granite",
@@ -1923,7 +1923,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q5_K_M)",
             description = "IBM Granite 4.0 H-Small with Q5_K_M quantization. Superior quality. 128k context. (22.9GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 22900000000L, // 22.9 GB
             source = "IBM Granite",
@@ -1936,7 +1936,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q5_1)",
             description = "IBM Granite 4.0 H-Small with Q5_1 quantization. Premium quality. 128k context. (24.2GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q5_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q5_1.gguf?download=true",
             category = "text",
             sizeBytes = 24200000000L, // 24.2 GB
             source = "IBM Granite",
@@ -1949,7 +1949,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q6_K)",
             description = "IBM Granite 4.0 H-Small with Q6_K quantization. Outstanding quality. 128k context. (26.5GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 26500000000L, // 26.5 GB
             source = "IBM Granite",
@@ -1962,7 +1962,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (Q8_0)",
             description = "IBM Granite 4.0 H-Small with Q8_0 quantization. Ultimate quality. 128k context. (34.3GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 34300000000L, // 34.3 GB
             source = "IBM Granite",
@@ -1975,7 +1975,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.0 H-Small (f16)",
             description = "IBM Granite 4.0 H-Small with f16 (full precision). Maximum quality, largest size. 128k context. (64.4GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-f16.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.0-h-small-GGUF/resolve/main/granite-4.0-h-small-f16.gguf?download=true",
             category = "text",
             sizeBytes = 64400000000L, // 64.4 GB
             source = "IBM Granite",
@@ -1990,7 +1990,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q4_0)",
             description = "IBM Granite 4.2 3B reasoning model with Q4_0 quantization. Standard 4-bit balance with built-in chain-of-thought thinking. 128k context. (2.13GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 2129118752L,
             source = "IBM Granite",
@@ -2004,7 +2004,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q4_1)",
             description = "IBM Granite 4.2 3B reasoning model with Q4_1 quantization. Enhanced 4-bit quality with built-in chain-of-thought thinking. 128k context. (2.34GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_1.gguf?download=true",
             category = "text",
             sizeBytes = 2341783072L,
             source = "IBM Granite",
@@ -2018,7 +2018,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q4_K_S)",
             description = "IBM Granite 4.2 3B reasoning model with Q4_K_S quantization. High quality compact with built-in chain-of-thought thinking. 128k context. (2.14GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 2142881312L,
             source = "IBM Granite",
@@ -2032,7 +2032,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q4_K_M)",
             description = "IBM Granite 4.2 3B reasoning model with Q4_K_M quantization. Very high quality recommended with built-in chain-of-thought thinking. 128k context. (2.24GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 2244011552L,
             source = "IBM Granite",
@@ -2046,7 +2046,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q5_0)",
             description = "IBM Granite 4.2 3B reasoning model with Q5_0 quantization. Near-lossless with built-in chain-of-thought thinking. 128k context. (2.55GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q5_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q5_0.gguf?download=true",
             category = "text",
             sizeBytes = 2554447392L,
             source = "IBM Granite",
@@ -2060,7 +2060,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q5_1)",
             description = "IBM Granite 4.2 3B reasoning model with Q5_1 quantization. Premium quality with built-in chain-of-thought thinking. 128k context. (2.77GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q5_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q5_1.gguf?download=true",
             category = "text",
             sizeBytes = 2767111712L,
             source = "IBM Granite",
@@ -2074,7 +2074,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q5_K_S)",
             description = "IBM Granite 4.2 3B reasoning model with Q5_K_S quantization. Excellent quality with built-in chain-of-thought thinking. 128k context. (2.55GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q5_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q5_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 2554447392L,
             source = "IBM Granite",
@@ -2088,7 +2088,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q5_K_M)",
             description = "IBM Granite 4.2 3B reasoning model with Q5_K_M quantization. Superior quality with built-in chain-of-thought thinking. 128k context. (2.61GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 2613634592L,
             source = "IBM Granite",
@@ -2102,7 +2102,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q6_K)",
             description = "IBM Granite 4.2 3B reasoning model with Q6_K quantization. Outstanding quality with built-in chain-of-thought thinking. 128k context. (3.01GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 3006359072L,
             source = "IBM Granite",
@@ -2116,7 +2116,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (Q8_0)",
             description = "IBM Granite 4.2 3B reasoning model with Q8_0 quantization. Ultimate quality with built-in chain-of-thought thinking. 128k context. (3.89GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 3892651552L,
             source = "IBM Granite",
@@ -2130,7 +2130,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 3B (bf16)",
             description = "IBM Granite 4.2 3B reasoning model with bf16 quantization. Full precision unquantized with built-in chain-of-thought thinking. 128k context. (7.32GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-bf16.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-bf16.gguf?download=true",
             category = "text",
             sizeBytes = 7323461152L,
             source = "IBM Granite",
@@ -2146,7 +2146,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q2_K)",
             description = "IBM Granite 4.2 8B reasoning model with Q2_K quantization. Smallest size with built-in chain-of-thought thinking. 128k context. (3.41GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q2_K.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q2_K.gguf?download=true",
             category = "text",
             sizeBytes = 3412312192L,
             source = "IBM Granite",
@@ -2160,7 +2160,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q3_K_S)",
             description = "IBM Granite 4.2 8B reasoning model with Q3_K_S quantization. Balanced size with built-in chain-of-thought thinking. 128k context. (3.94GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q3_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q3_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 3942957184L,
             source = "IBM Granite",
@@ -2174,7 +2174,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q3_K_M)",
             description = "IBM Granite 4.2 8B reasoning model with Q3_K_M quantization. Good quality with built-in chain-of-thought thinking. 128k context. (4.35GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q3_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q3_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 4347052160L,
             source = "IBM Granite",
@@ -2188,7 +2188,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q3_K_L)",
             description = "IBM Granite 4.2 8B reasoning model with Q3_K_L quantization. Better quality with built-in chain-of-thought thinking. 128k context. (4.70GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q3_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q3_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 4699897984L,
             source = "IBM Granite",
@@ -2202,7 +2202,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q4_0)",
             description = "IBM Granite 4.2 8B reasoning model with Q4_0 quantization. Standard 4-bit balance with built-in chain-of-thought thinking. 128k context. (5.06GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 5055955072L,
             source = "IBM Granite",
@@ -2216,7 +2216,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q4_1)",
             description = "IBM Granite 4.2 8B reasoning model with Q4_1 quantization. Enhanced 4-bit quality with built-in chain-of-thought thinking. 128k context. (5.58GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q4_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q4_1.gguf?download=true",
             category = "text",
             sizeBytes = 5579718784L,
             source = "IBM Granite",
@@ -2230,7 +2230,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q4_K_S)",
             description = "IBM Granite 4.2 8B reasoning model with Q4_K_S quantization. High quality compact with built-in chain-of-thought thinking. 128k context. (5.09GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q4_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q4_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 5090820224L,
             source = "IBM Granite",
@@ -2244,7 +2244,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q4_K_M)",
             description = "IBM Granite 4.2 8B reasoning model with Q4_K_M quantization. Very high quality recommended with built-in chain-of-thought thinking. 128k context. (5.35GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 5347917952L,
             source = "IBM Granite",
@@ -2258,7 +2258,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q5_0)",
             description = "IBM Granite 4.2 8B reasoning model with Q5_0 quantization. Near-lossless with built-in chain-of-thought thinking. 128k context. (6.10GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q5_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q5_0.gguf?download=true",
             category = "text",
             sizeBytes = 6103482496L,
             source = "IBM Granite",
@@ -2272,7 +2272,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q5_1)",
             description = "IBM Granite 4.2 8B reasoning model with Q5_1 quantization. Premium quality with built-in chain-of-thought thinking. 128k context. (6.63GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q5_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q5_1.gguf?download=true",
             category = "text",
             sizeBytes = 6627246208L,
             source = "IBM Granite",
@@ -2286,7 +2286,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q5_K_S)",
             description = "IBM Granite 4.2 8B reasoning model with Q5_K_S quantization. Excellent quality with built-in chain-of-thought thinking. 128k context. (6.10GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q5_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q5_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 6103482496L,
             source = "IBM Granite",
@@ -2300,7 +2300,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q5_K_M)",
             description = "IBM Granite 4.2 8B reasoning model with Q5_K_M quantization. Superior quality with built-in chain-of-thought thinking. 128k context. (6.25GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 6253887616L,
             source = "IBM Granite",
@@ -2314,7 +2314,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q6_K)",
             description = "IBM Granite 4.2 8B reasoning model with Q6_K quantization. Outstanding quality with built-in chain-of-thought thinking. 128k context. (7.22GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 7216480384L,
             source = "IBM Granite",
@@ -2328,7 +2328,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (Q8_0)",
             description = "IBM Granite 4.2 8B reasoning model with Q8_0 quantization. Ultimate quality with built-in chain-of-thought thinking. 128k context. (9.35GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 9345613952L,
             source = "IBM Granite",
@@ -2342,7 +2342,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 8B (bf16)",
             description = "IBM Granite 4.2 8B reasoning model with bf16 quantization. Full precision unquantized with built-in chain-of-thought thinking. 128k context. (17.59GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-bf16.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-8b-GGUF/resolve/93f3f6a8938ee922b784cf4e5b4203cd3428df8f/granite-4.2-8b-bf16.gguf?download=true",
             category = "text",
             sizeBytes = 17587421312L,
             source = "IBM Granite",
@@ -2358,7 +2358,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q2_K)",
             description = "IBM Granite 4.2 30B reasoning model with Q2_K quantization. Smallest size with built-in chain-of-thought thinking. 128k context. (10.86GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q2_K.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q2_K.gguf?download=true",
             category = "text",
             sizeBytes = 10858656480L,
             source = "IBM Granite",
@@ -2372,7 +2372,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q3_K_S)",
             description = "IBM Granite 4.2 30B reasoning model with Q3_K_S quantization. Balanced size with built-in chain-of-thought thinking. 128k context. (12.75GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q3_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q3_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 12745896672L,
             source = "IBM Granite",
@@ -2386,7 +2386,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q3_K_M)",
             description = "IBM Granite 4.2 30B reasoning model with Q3_K_M quantization. Good quality with built-in chain-of-thought thinking. 128k context. (14.13GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q3_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q3_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 14133162720L,
             source = "IBM Granite",
@@ -2400,7 +2400,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q3_K_L)",
             description = "IBM Granite 4.2 30B reasoning model with Q3_K_L quantization. Better quality with built-in chain-of-thought thinking. 128k context. (15.31GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q3_K_L.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q3_K_L.gguf?download=true",
             category = "text",
             sizeBytes = 15306519264L,
             source = "IBM Granite",
@@ -2414,7 +2414,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q4_0)",
             description = "IBM Granite 4.2 30B reasoning model with Q4_0 quantization. Standard 4-bit balance with built-in chain-of-thought thinking. 128k context. (16.58GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 16579556064L,
             source = "IBM Granite",
@@ -2428,7 +2428,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q4_1)",
             description = "IBM Granite 4.2 30B reasoning model with Q4_1 quantization. Enhanced 4-bit quality with built-in chain-of-thought thinking. 128k context. (18.38GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q4_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q4_1.gguf?download=true",
             category = "text",
             sizeBytes = 18383631072L,
             source = "IBM Granite",
@@ -2442,7 +2442,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q4_K_S)",
             description = "IBM Granite 4.2 30B reasoning model with Q4_K_S quantization. High quality compact with built-in chain-of-thought thinking. 128k context. (16.72GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q4_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q4_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 16715870944L,
             source = "IBM Granite",
@@ -2456,7 +2456,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q4_K_M)",
             description = "IBM Granite 4.2 30B reasoning model with Q4_K_M quantization. Very high quality recommended with built-in chain-of-thought thinking. 128k context. (17.72GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 17721455328L,
             source = "IBM Granite",
@@ -2470,7 +2470,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q5_0)",
             description = "IBM Granite 4.2 30B reasoning model with Q5_0 quantization. Near-lossless with built-in chain-of-thought thinking. 128k context. (20.19GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q5_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q5_0.gguf?download=true",
             category = "text",
             sizeBytes = 20187706080L,
             source = "IBM Granite",
@@ -2484,7 +2484,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q5_1)",
             description = "IBM Granite 4.2 30B reasoning model with Q5_1 quantization. Premium quality with built-in chain-of-thought thinking. 128k context. (21.99GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q5_1.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q5_1.gguf?download=true",
             category = "text",
             sizeBytes = 21991781088L,
             source = "IBM Granite",
@@ -2498,7 +2498,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q5_K_S)",
             description = "IBM Granite 4.2 30B reasoning model with Q5_K_S quantization. Excellent quality with built-in chain-of-thought thinking. 128k context. (20.19GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q5_K_S.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q5_K_S.gguf?download=true",
             category = "text",
             sizeBytes = 20187706080L,
             source = "IBM Granite",
@@ -2512,7 +2512,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q5_K_M)",
             description = "IBM Granite 4.2 30B reasoning model with Q5_K_M quantization. Superior quality with built-in chain-of-thought thinking. 128k context. (20.78GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 20775957216L,
             source = "IBM Granite",
@@ -2526,7 +2526,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q6_K)",
             description = "IBM Granite 4.2 30B reasoning model with Q6_K quantization. Outstanding quality with built-in chain-of-thought thinking. 128k context. (24.02GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 24021365472L,
             source = "IBM Granite",
@@ -2540,7 +2540,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (Q8_0)",
             description = "IBM Granite 4.2 30B reasoning model with Q8_0 quantization. Ultimate quality with built-in chain-of-thought thinking. 128k context. (58.56GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 31111705312L,
             source = "IBM Granite",
@@ -2554,7 +2554,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.2 30B (bf16)",
             description = "IBM Granite 4.2 30B reasoning model in full bfloat16 precision (2 shards). Maximum quality with built-in chain-of-thought thinking. 128k context. (58.56GB)",
-            url = "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-bf16-00001-of-00002.gguf?download=true",
+            url = "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-bf16-00001-of-00002.gguf?download=true",
             category = "text",
             sizeBytes = 58558182336L,
             source = "IBM Granite",
@@ -2565,7 +2565,7 @@ object ModelData {
             contextWindowSize = 131072,
             modelFormat = "gguf",
             additionalFiles = listOf(
-                "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-bf16-00002-of-00002.gguf?download=true"
+                "https://hf-mirror.com/ibm-granite/granite-4.2-30b-GGUF/resolve/27b350a791e81d9a4d1ddca1c49282e9ec533768/granite-4.2-30b-bf16-00002-of-00002.gguf?download=true"
             )
         ),
 
@@ -2573,7 +2573,7 @@ object ModelData {
         LLMModel(
             name = "Phi-4 Mini (INT8, 4k)",
             description = "Phi-4 Mini INT8 variant in LiteRT LM format (litertlm).",
-            url = "https://huggingface.co/litert-community/Phi-4-mini-instruct/resolve/main/Phi-4-mini-instruct_multi-prefill-seq_q8_ekv4096.litertlm?download=true",
+            url = "https://hf-mirror.com/litert-community/Phi-4-mini-instruct/resolve/main/Phi-4-mini-instruct_multi-prefill-seq_q8_ekv4096.litertlm?download=true",
             category = "text",
             sizeBytes = 3910090752L, // 3.91 GB as reported on HuggingFace file page
             source = "Microsoft via LiteRT Community",
@@ -2588,7 +2588,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 1.2B Instruct (Q4_0)",
             description = "LiquidAI's 1.2B instruct model. Q4_0 quantization. 128k context.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/main/LFM2.5-1.2B-Instruct-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/main/LFM2.5-1.2B-Instruct-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 696000000L, // 696 MB (actual HF file size)
             source = "LiquidAI",
@@ -2601,7 +2601,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 1.2B Instruct (Q4_K_M)",
             description = "LiquidAI's 1.2B instruct model. Q4_K_M quantization. 128k context.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/main/LFM2.5-1.2B-Instruct-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/main/LFM2.5-1.2B-Instruct-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 731000000L, // 731 MB (actual HF file size)
             source = "LiquidAI",
@@ -2614,7 +2614,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 1.2B Instruct (Q8_0)",
             description = "LiquidAI's 1.2B instruct model. Q8_0 quantization. 128k context.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/main/LFM2.5-1.2B-Instruct-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/main/LFM2.5-1.2B-Instruct-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 1250000000L, // 1.25 GB (actual HF file size)
             source = "LiquidAI",
@@ -2629,7 +2629,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 1.2B Thinking (Q4_0)",
             description = "LiquidAI's 1.2B thinking model. Q4_0 quantization. 128k context. Supports 'thinking' mode.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/resolve/main/LFM2.5-1.2B-Thinking-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/resolve/main/LFM2.5-1.2B-Thinking-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 696000000L, // 696 MB (actual HF file size)
             source = "LiquidAI",
@@ -2642,7 +2642,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 1.2B Thinking (Q4_K_M)",
             description = "LiquidAI's 1.2B thinking model. Q4_K_M quantization. 128k context. Supports 'thinking' mode.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/resolve/main/LFM2.5-1.2B-Thinking-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/resolve/main/LFM2.5-1.2B-Thinking-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 731000000L, // 731 MB (actual HF file size)
             source = "LiquidAI",
@@ -2655,7 +2655,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 1.2B Thinking (Q8_0)",
             description = "LiquidAI's 1.2B thinking model. Q8_0 quantization. 128k context. Supports 'thinking' mode.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/resolve/main/LFM2.5-1.2B-Thinking-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/resolve/main/LFM2.5-1.2B-Thinking-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 1250000000L, // 1.25 GB (actual HF file size)
             source = "LiquidAI",
@@ -2670,7 +2670,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 2.6B (Q4_0)",
             description = "LiquidAI's 2.6B parameter hybrid model. Q4_0 quantization. 128k context. (1.59GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 1593894720L,
             source = "LiquidAI",
@@ -2683,7 +2683,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 2.6B (Q4_K_M)",
             description = "LiquidAI's 2.6B parameter hybrid model. Q4_K_M quantization, recommended. 128k context. (1.67GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 1674454848L,
             source = "LiquidAI",
@@ -2696,7 +2696,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 2.6B (Q5_K_M)",
             description = "LiquidAI's 2.6B parameter hybrid model. Q5_K_M quantization. 128k context. (1.94GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 1939744576L,
             source = "LiquidAI",
@@ -2709,7 +2709,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 2.6B (Q6_K)",
             description = "LiquidAI's 2.6B parameter hybrid model. Q6_K quantization. 128k context. (2.22GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 2221614912L,
             source = "LiquidAI",
@@ -2722,7 +2722,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 2.6B (Q8_0)",
             description = "LiquidAI's 2.6B parameter hybrid model. Q8_0 quantization. 128k context. (2.87GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 2874779456L,
             source = "LiquidAI",
@@ -2735,7 +2735,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 2.6B (BF16)",
             description = "LiquidAI's 2.6B parameter hybrid model. BF16 (bfloat16 precision) variant. 128k context. (5.40GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-BF16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-BF16.gguf?download=true",
             category = "text",
             sizeBytes = 5403158336L,
             source = "LiquidAI",
@@ -2748,7 +2748,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 2.6B (F16)",
             description = "LiquidAI's 2.6B parameter hybrid model. F16 (float16 precision) variant. 128k context. (5.40GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-F16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-2.6B-GGUF/resolve/b421ad1d549afeda6a0fb2ad3a697cb5a7879adc/LFM2.5-2.6B-F16.gguf?download=true",
             category = "text",
             sizeBytes = 5403158336L,
             source = "LiquidAI",
@@ -2763,7 +2763,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-8B-A1B (Q4_0)",
             description = "Liquid's 8.3B parameter MoE model (1.5B active). Q4_0 quantization. 131k context. (4.84GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 4844678368L,
             source = "LiquidAI",
@@ -2776,7 +2776,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-8B-A1B (Q4_K_M)",
             description = "Liquid's 8.3B parameter MoE model (1.5B active). Q4_K_M quantization, recommended. 131k context. (5.16GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 5155564768L,
             source = "LiquidAI",
@@ -2789,7 +2789,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-8B-A1B (Q5_K_M)",
             description = "Liquid's 8.3B parameter MoE model (1.5B active). Q5_K_M quantization. 131k context. (6.03GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 6030339296L,
             source = "LiquidAI",
@@ -2802,7 +2802,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-8B-A1B (Q6_K)",
             description = "Liquid's 8.3B parameter MoE model (1.5B active). Q6_K quantization. 131k context. (6.96GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 6959787232L,
             source = "LiquidAI",
@@ -2815,7 +2815,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-8B-A1B (Q8_0)",
             description = "Liquid's 8.3B parameter MoE model (1.5B active). Q8_0 quantization. 131k context. (9.01GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 9010195680L,
             source = "LiquidAI",
@@ -2828,7 +2828,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-8B-A1B (BF16)",
             description = "Liquid's 8.3B parameter MoE model (1.5B active). BF16 (bfloat16 precision) variant. 131k context. (16.95GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-BF16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-BF16.gguf?download=true",
             category = "text",
             sizeBytes = 16947260640L,
             source = "LiquidAI",
@@ -2841,7 +2841,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-8B-A1B (F16)",
             description = "Liquid's 8.3B parameter MoE model (1.5B active). F16 (float16 precision) variant. 131k context. (16.95GB)",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-F16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/dfd5fdcad7a1c0d31473fb4ca443b8befbacddf0/LFM2.5-8B-A1B-F16.gguf?download=true",
             category = "text",
             sizeBytes = 16947260640L,
             source = "LiquidAI",
@@ -2856,7 +2856,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-24B-A2B (UD-IQ2_XXS)",
             description = "Liquid's 24B parameter MoE reasoning model (2B active). Unsloth Dynamic UD-IQ2_XXS quantization. Smallest variant. Always thinks before answering. 131k context. (7.47GB)",
-            url = "https://huggingface.co/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-IQ2_XXS.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-IQ2_XXS.gguf?download=true",
             category = "text",
             sizeBytes = 7468302592L,
             source = "LiquidAI",
@@ -2869,7 +2869,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-24B-A2B (UD-IQ2_M)",
             description = "Liquid's 24B parameter MoE reasoning model (2B active). Unsloth Dynamic UD-IQ2_M quantization. Very compact variant. Always thinks before answering. 131k context. (7.54GB)",
-            url = "https://huggingface.co/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-IQ2_M.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-IQ2_M.gguf?download=true",
             category = "text",
             sizeBytes = 7535313152L,
             source = "LiquidAI",
@@ -2882,7 +2882,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-24B-A2B (UD-Q2_K_XL)",
             description = "Liquid's 24B parameter MoE reasoning model (2B active). Unsloth Dynamic UD-Q2_K_XL quantization. Compact variant. Always thinks before answering. 131k context. (8.04GB)",
-            url = "https://huggingface.co/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-Q2_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-Q2_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 8042561760L,
             source = "LiquidAI",
@@ -2895,7 +2895,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-24B-A2B (UD-IQ3_XXS)",
             description = "Liquid's 24B parameter MoE reasoning model (2B active). Unsloth Dynamic UD-IQ3_XXS quantization. Balanced variant. Always thinks before answering. 131k context. (8.96GB)",
-            url = "https://huggingface.co/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-IQ3_XXS.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-IQ3_XXS.gguf?download=true",
             category = "text",
             sizeBytes = 8959328480L,
             source = "LiquidAI",
@@ -2908,7 +2908,7 @@ object ModelData {
         LLMModel(
             name = "LFM2.5-24B-A2B (UD-Q3_K_XL)",
             description = "Liquid's 24B parameter MoE reasoning model (2B active). Unsloth Dynamic UD-Q3_K_XL quantization. Best quality of the low-bit variants. Always thinks before answering. 131k context. (10.95GB)",
-            url = "https://huggingface.co/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-Q3_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/LFM2.5-24B-A2B-GGUF/resolve/faa77113e93335b63423e9e8d33395f86eaf8946/LFM2.5-24B-A2B-UD-Q3_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 10947100928L,
             source = "LiquidAI",
@@ -2923,7 +2923,7 @@ object ModelData {
         LLMModel(
             name = "LFM2-24B-A2B (Q4_0)",
             description = "LiquidAI's MoE model with 24B total parameters but only 2B active per token. Q4_0 quantization. 32k context. Multilingual (9 languages).",
-            url = "https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q4_0.gguf?download=true",
             category = "text",
             sizeBytes = 13500000000L, // 13.5 GB from HuggingFace
             source = "LiquidAI",
@@ -2936,7 +2936,7 @@ object ModelData {
         LLMModel(
             name = "LFM2-24B-A2B (Q4_K_M)",
             description = "LiquidAI's MoE model with 24B total parameters but only 2B active per token. Q4_K_M quantization. 32k context. Multilingual (9 languages).",
-            url = "https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 14400000000L, // 14.4 GB from HuggingFace
             source = "LiquidAI",
@@ -2949,7 +2949,7 @@ object ModelData {
         LLMModel(
             name = "LFM2-24B-A2B (Q5_K_M)",
             description = "LiquidAI's MoE model with 24B total parameters but only 2B active per token. Q5_K_M quantization for better quality. 32k context. Multilingual (9 languages).",
-            url = "https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 16900000000L, // 16.9 GB from HuggingFace
             source = "LiquidAI",
@@ -2962,7 +2962,7 @@ object ModelData {
         LLMModel(
             name = "LFM2-24B-A2B (Q6_K)",
             description = "LiquidAI's MoE model with 24B total parameters but only 2B active per token. Q6_K quantization for high quality. 32k context. Multilingual (9 languages).",
-            url = "https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 19600000000L, // 19.6 GB from HuggingFace
             source = "LiquidAI",
@@ -2975,7 +2975,7 @@ object ModelData {
         LLMModel(
             name = "LFM2-24B-A2B (Q8_0)",
             description = "LiquidAI's MoE model with 24B total parameters but only 2B active per token. Q8_0 quantization - near full quality. 32k context. Multilingual (9 languages).",
-            url = "https://huggingface.co/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2-24B-A2B-GGUF/resolve/main/LFM2-24B-A2B-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 25400000000L, // 25.4 GB from HuggingFace
             source = "LiquidAI",
@@ -2990,7 +2990,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 1.2B Instruct (ONNX Q4)",
             description = "LiquidAI's 1.2B instruction model in ONNX format. Q4 quantization for balanced quality and size. 128k context. Requires downloading 2 files.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/onnx/model_q4.onnx?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/onnx/model_q4.onnx?download=true",
             category = "text",
             sizeBytes = 853542627L, // model_q4.onnx + model_q4.onnx_data + tokenizer.json + tokenizer_config.json (HF API)
             source = "LiquidAI",
@@ -3000,15 +3000,15 @@ object ModelData {
             contextWindowSize = 128000,
             modelFormat = "onnx",
             additionalFiles = listOf(
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/onnx/model_q4.onnx_data?download=true",
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/tokenizer.json?download=true",
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/tokenizer_config.json?download=true"
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/onnx/model_q4.onnx_data?download=true",
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/tokenizer.json?download=true",
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/tokenizer_config.json?download=true"
             )
         ),
         LLMModel(
             name = "LFM-2.5 1.2B Instruct (ONNX Q8)",
             description = "LiquidAI's 1.2B instruction model in ONNX format. Q8 quantization for higher quality. 128k context. Requires downloading 2 files.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/onnx/model_q8.onnx?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/onnx/model_q8.onnx?download=true",
             category = "text",
             sizeBytes = 1771510908L, // model_q8.onnx + model_q8.onnx_data + tokenizer.json + tokenizer_config.json (HF API)
             source = "LiquidAI",
@@ -3018,9 +3018,9 @@ object ModelData {
             contextWindowSize = 128000,
             modelFormat = "onnx",
             additionalFiles = listOf(
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/onnx/model_q8.onnx_data?download=true",
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/tokenizer.json?download=true",
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/tokenizer_config.json?download=true"
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/onnx/model_q8.onnx_data?download=true",
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/tokenizer.json?download=true",
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Instruct-ONNX/resolve/main/tokenizer_config.json?download=true"
             )
         ),
 
@@ -3028,7 +3028,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 1.2B Thinking (ONNX Q4)",
             description = "LiquidAI's 1.2B reasoning model in ONNX format. Q4 quantization for balanced quality and size. 128k context. Requires downloading 2 files.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/onnx/model_q4.onnx?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/onnx/model_q4.onnx?download=true",
             category = "text",
             sizeBytes = 853542627L, // model_q4.onnx + model_q4.onnx_data + tokenizer.json + tokenizer_config.json (HF API)
             source = "LiquidAI",
@@ -3038,15 +3038,15 @@ object ModelData {
             contextWindowSize = 128000,
             modelFormat = "onnx",
             additionalFiles = listOf(
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/onnx/model_q4.onnx_data?download=true",
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/tokenizer.json?download=true",
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/tokenizer_config.json?download=true"
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/onnx/model_q4.onnx_data?download=true",
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/tokenizer.json?download=true",
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/tokenizer_config.json?download=true"
             )
         ),
         LLMModel(
             name = "LFM-2.5 1.2B Thinking (ONNX Q8)",
             description = "LiquidAI's 1.2B reasoning model in ONNX format. Q8 quantization for higher quality. 128k context. Requires downloading 2 files.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/onnx/model_q8.onnx?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/onnx/model_q8.onnx?download=true",
             category = "text",
             sizeBytes = 1771510908L, // model_q8.onnx + model_q8.onnx_data + tokenizer.json + tokenizer_config.json (HF API)
             source = "LiquidAI",
@@ -3056,9 +3056,9 @@ object ModelData {
             contextWindowSize = 128000,
             modelFormat = "onnx",
             additionalFiles = listOf(
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/onnx/model_q8.onnx_data?download=true",
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/tokenizer.json?download=true",
-                "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/tokenizer_config.json?download=true"
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/onnx/model_q8.onnx_data?download=true",
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/tokenizer.json?download=true",
+                "https://hf-mirror.com/LiquidAI/LFM2.5-1.2B-Thinking-ONNX/resolve/main/tokenizer_config.json?download=true"
             )
         ),
 
@@ -3066,7 +3066,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 1.6B (BF16)",
             description = "LiquidAI's 1.6B vision-language model. BF16 precision. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-BF16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-BF16.gguf?download=true",
             category = "multimodal",
             sizeBytes = 2340000000L, // 2.34 GB from HuggingFace
             source = "LiquidAI",
@@ -3079,7 +3079,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 1.6B (F16)",
             description = "LiquidAI's 1.6B vision-language model. F16 precision. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-F16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-F16.gguf?download=true",
             category = "multimodal",
             sizeBytes = 2340000000L, // 2.34 GB from HuggingFace
             source = "LiquidAI",
@@ -3092,7 +3092,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 1.6B (Q4_0)",
             description = "LiquidAI's 1.6B vision-language model. Q4_0 quantization. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-Q4_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 696000000L, // 696 MB from HuggingFace
             source = "LiquidAI",
@@ -3105,7 +3105,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 1.6B (Q8_0)",
             description = "LiquidAI's 1.6B vision-language model. Q8_0 quantization. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-Q8_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 1250000000L, // 1.25 GB from HuggingFace
             source = "LiquidAI",
@@ -3118,7 +3118,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 1.6B (Vision Projector, BF16)",
             description = "Vision Projector for LFM-2.5 VL models. BF16 variant required for image input. Download this to enable vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/mmproj-LFM2.5-VL-1.6b-BF16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/mmproj-LFM2.5-VL-1.6b-BF16.gguf?download=true",
             category = "multimodal",
             sizeBytes = 856000000L, // 856 MB from HuggingFace
             source = "LiquidAI",
@@ -3131,7 +3131,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 1.6B (Vision Projector, Q8_0)",
             description = "Vision Projector for LFM-2.5 VL models. Q8_0 quantized variant for smaller size. Download this to enable vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/mmproj-LFM2.5-VL-1.6b-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/main/mmproj-LFM2.5-VL-1.6b-Q8_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 583000000L, // 583 MB from HuggingFace
             source = "LiquidAI",
@@ -3146,7 +3146,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (Q4_0)",
             description = "LiquidAI's 3B vision-language model. Q4_0 quantization. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q4_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 1593894112L,
             source = "LiquidAI",
@@ -3159,7 +3159,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (Q4_K_M)",
             description = "LiquidAI's 3B vision-language model. Q4_K_M quantization, recommended. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q4_K_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 1674454240L,
             source = "LiquidAI",
@@ -3172,7 +3172,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (Q5_K_M)",
             description = "LiquidAI's 3B vision-language model. Q5_K_M quantization. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q5_K_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 1939743968L,
             source = "LiquidAI",
@@ -3185,7 +3185,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (Q6_K)",
             description = "LiquidAI's 3B vision-language model. Q6_K quantization. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q6_K.gguf?download=true",
             category = "multimodal",
             sizeBytes = 2221614304L,
             source = "LiquidAI",
@@ -3198,7 +3198,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (Q8_0)",
             description = "LiquidAI's 3B vision-language model. Q8_0 quantization. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-Q8_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 2874778848L,
             source = "LiquidAI",
@@ -3211,7 +3211,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (BF16)",
             description = "LiquidAI's 3B vision-language model. BF16 precision. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-BF16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-BF16.gguf?download=true",
             category = "multimodal",
             sizeBytes = 5403157728L,
             source = "LiquidAI",
@@ -3224,7 +3224,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (F16)",
             description = "LiquidAI's 3B vision-language model. F16 precision. Supports vision + text. Requires mmproj for vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-F16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/LFM2.5-VL-3B-F16.gguf?download=true",
             category = "multimodal",
             sizeBytes = 5403157728L,
             source = "LiquidAI",
@@ -3237,7 +3237,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (Vision Projector, BF16)",
             description = "Vision Projector for LFM-2.5 VL 3B models. BF16 variant required for image input. Download this to enable vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/mmproj-LFM2.5-VL-3B-BF16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/mmproj-LFM2.5-VL-3B-BF16.gguf?download=true",
             category = "multimodal",
             sizeBytes = 855762560L,
             source = "LiquidAI",
@@ -3250,7 +3250,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (Vision Projector, F16)",
             description = "Vision Projector for LFM-2.5 VL 3B models. F16 variant required for image input. Download this to enable vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/mmproj-LFM2.5-VL-3B-F16.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/mmproj-LFM2.5-VL-3B-F16.gguf?download=true",
             category = "multimodal",
             sizeBytes = 853993088L,
             source = "LiquidAI",
@@ -3263,7 +3263,7 @@ object ModelData {
         LLMModel(
             name = "LFM-2.5 VL 3B (Vision Projector, Q8_0)",
             description = "Vision Projector for LFM-2.5 VL 3B models. Q8_0 quantized variant for smaller size. Download this to enable vision.",
-            url = "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/mmproj-LFM2.5-VL-3B-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-3B-GGUF/resolve/3e0e828198e2abb75a957ad823f5d691c13f0f28/mmproj-LFM2.5-VL-3B-Q8_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 583109120L,
             source = "LiquidAI",
@@ -3278,7 +3278,7 @@ object ModelData {
         // LLMModel(
         //     name = "LFM-2.5 VL 1.6B (ONNX Q4)",
         //     description = "LiquidAI's 1.6B vision-language model in ONNX format. Q4 quantization. Supports vision + text. Requires multiple files.",
-        //     url = "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/decoder_q4.onnx?download=true",
+        //     url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/decoder_q4.onnx?download=true",
         //     category = "multimodal",
         //     sizeBytes = 1760000000L, // decoder_q4 + embed_images_q4 + embed_tokens_fp16 + tokenizer (~1.76 GB)
         //     source = "LiquidAI",
@@ -3288,20 +3288,20 @@ object ModelData {
         //     contextWindowSize = 128000,
         //     modelFormat = "onnx",
         //     additionalFiles = listOf(
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/decoder_q4.onnx_data?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_images_q4.onnx?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_images_q4.onnx_data?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx_data?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/config.json?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/tokenizer.json?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/tokenizer_config.json?download=true"
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/decoder_q4.onnx_data?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_images_q4.onnx?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_images_q4.onnx_data?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx_data?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/config.json?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/tokenizer.json?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/tokenizer_config.json?download=true"
         //     )
         // ),
         // LLMModel(
         //     name = "LFM-2.5 VL 1.6B (ONNX Q8)",
         //     description = "LiquidAI's 1.6B vision-language model in ONNX format. Q8 quantization for higher quality. Supports vision + text.",
-        //     url = "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/decoder_q8.onnx?download=true",
+        //     url = "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/decoder_q8.onnx?download=true",
         //     category = "multimodal",
         //     sizeBytes = 2540000000L, // decoder_q8 + embed_images_q8 + embed_tokens_fp16 + tokenizer (~2.54 GB)
         //     source = "LiquidAI",
@@ -3311,14 +3311,14 @@ object ModelData {
         //     contextWindowSize = 128000,
         //     modelFormat = "onnx",
         //     additionalFiles = listOf(
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/decoder_q8.onnx_data?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_images_q8.onnx?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_images_q8.onnx_data?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx_data?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/config.json?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/tokenizer.json?download=true",
-        //         "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/tokenizer_config.json?download=true"
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/decoder_q8.onnx_data?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_images_q8.onnx?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_images_q8.onnx_data?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx_data?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/config.json?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/tokenizer.json?download=true",
+        //         "https://hf-mirror.com/LiquidAI/LFM2.5-VL-1.6B-ONNX/resolve/main/tokenizer_config.json?download=true"
         //     )
         // ),
 
@@ -3326,7 +3326,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 3B Instruct (Q4_K_M)",
             description = "MistralAI's 3B instruct model. Q4_K_M quantization. 32k context. Supports Vision (Requires mmproj).",
-            url = "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF/resolve/main/Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-GGUF/resolve/main/Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 2150000000L, // 2.15 GB from HuggingFace
             source = "MistralAI",
@@ -3339,7 +3339,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 3B Instruct (Q5_K_M)",
             description = "MistralAI's 3B instruct model. Q5_K_M quantization. 32k context. Supports Vision (Requires mmproj).",
-            url = "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF/resolve/main/Ministral-3-3B-Instruct-2512-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-GGUF/resolve/main/Ministral-3-3B-Instruct-2512-Q5_K_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 2470000000L, // 2.47 GB from HuggingFace
             source = "MistralAI",
@@ -3352,7 +3352,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 3B Instruct (Q8_0)",
             description = "MistralAI's 3B instruct model. Q8_0 quantization. 32k context. Supports Vision (Requires mmproj).",
-            url = "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF/resolve/main/Ministral-3-3B-Instruct-2512-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-GGUF/resolve/main/Ministral-3-3B-Instruct-2512-Q8_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 3650000000L, // 3.65 GB from HuggingFace
             source = "MistralAI",
@@ -3365,7 +3365,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 3B Instruct (Vision Projector, BF16)",
             description = "Multimodal Vision Projector for Ministral-3 3B models. Specifically the BF16 variant required for image input capabilities. Download this if you want to enable Vision for Ministral models.",
-            url = "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF/resolve/main/Ministral-3-3B-Instruct-2512-BF16-mmproj.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-GGUF/resolve/main/Ministral-3-3B-Instruct-2512-BF16-mmproj.gguf?download=true",
             category = "multimodal",
             sizeBytes = 842000000L, // 842 MB from HuggingFace
             source = "MistralAI",
@@ -3380,7 +3380,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 3B Instruct (ONNX Q4)",
             description = "MistralAI's 3B instruction model in ONNX format. Q4 quantization - recommended for mobile. 32k context. Supports vision. Requires downloading multiple files.",
-            url = "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4.onnx?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4.onnx?download=true",
             category = "multimodal",
             sizeBytes = 3367933870L, // decoder_q4 + decoder_data x2 + embed_fp16 + vision_q4 + config + tokenizer (HF API)
             source = "MistralAI",
@@ -3390,21 +3390,21 @@ object ModelData {
             contextWindowSize = 32768,
             modelFormat = "onnx",
             additionalFiles = listOf(
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4.onnx_data?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4.onnx_data_1?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx_data?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/vision_encoder_q4.onnx?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/vision_encoder_q4.onnx_data?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/config.json?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/tokenizer.json?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/tokenizer_config.json?download=true"
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4.onnx_data?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4.onnx_data_1?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx_data?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/vision_encoder_q4.onnx?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/vision_encoder_q4.onnx_data?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/config.json?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/tokenizer.json?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/tokenizer_config.json?download=true"
             )
         ),
         LLMModel(
             name = "Ministral-3 3B Instruct (ONNX Q4F16)",
             description = "MistralAI's 3B instruction model in ONNX format. Q4F16 mixed precision - best quality/size balance. 32k context. Supports vision.",
-            url = "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4f16.onnx?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4f16.onnx?download=true",
             category = "multimodal",
             sizeBytes = 3007199181L, // decoder_q4f16 + decoder_data + embed_fp16 + vision_q4 + config + tokenizer (HF API)
             source = "MistralAI",
@@ -3414,14 +3414,14 @@ object ModelData {
             contextWindowSize = 32768,
             modelFormat = "onnx",
             additionalFiles = listOf(
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4f16.onnx_data?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx_data?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/vision_encoder_q4.onnx?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/vision_encoder_q4.onnx_data?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/config.json?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/tokenizer.json?download=true",
-                "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/tokenizer_config.json?download=true"
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/decoder_model_merged_q4f16.onnx_data?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/embed_tokens_fp16.onnx_data?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/vision_encoder_q4.onnx?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/onnx/vision_encoder_q4.onnx_data?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/config.json?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/tokenizer.json?download=true",
+                "https://hf-mirror.com/mistralai/Ministral-3-3B-Instruct-2512-ONNX/resolve/main/tokenizer_config.json?download=true"
             )
         ),
 
@@ -3429,7 +3429,7 @@ object ModelData {
         LLMModel(
             name = "GPT-OSS 20B (Q4_K_M)",
             description = "OpenAI's open-weight MoE model (21B total params, 3.6B active). Q4_K_M quantization. 128k context. Uses Harmony chat format. Supports reasoning modes (low/medium/high).",
-            url = "https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q4_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 11600000000L, // 11.6 GB from HuggingFace
             source = "OpenAI",
@@ -3442,7 +3442,7 @@ object ModelData {
         LLMModel(
             name = "GPT-OSS 20B (Q5_K_M)",
             description = "OpenAI's open-weight MoE model (21B total params, 3.6B active). Q5_K_M quantization for better quality. 128k context. Uses Harmony chat format. Supports reasoning modes.",
-            url = "https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q5_K_M.gguf?download=true",
             category = "text",
             sizeBytes = 11700000000L, // 11.7 GB from HuggingFace
             source = "OpenAI",
@@ -3455,7 +3455,7 @@ object ModelData {
         LLMModel(
             name = "GPT-OSS 20B (Q6_K)",
             description = "OpenAI's open-weight MoE model (21B total params, 3.6B active). Q6_K quantization for high quality. 128k context. Uses Harmony chat format. Supports reasoning modes.",
-            url = "https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q6_K.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q6_K.gguf?download=true",
             category = "text",
             sizeBytes = 12000000000L, // 12 GB from HuggingFace
             source = "OpenAI",
@@ -3468,7 +3468,7 @@ object ModelData {
         LLMModel(
             name = "GPT-OSS 20B (Q8_0)",
             description = "OpenAI's open-weight MoE model (21B total params, 3.6B active). Q8_0 quantization - near full quality. 128k context. Uses Harmony chat format. Supports reasoning modes.",
-            url = "https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf?download=true",
             category = "text",
             sizeBytes = 12100000000L, // 12.1 GB from HuggingFace
             source = "OpenAI",
@@ -3483,7 +3483,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3n E2B",
             description = "Google Gemma-3n E2B with multimodal capabilities (text, vision, and audio). Effective 2B parameters with selective parameter activation. Supports 4k context window and multimodal input including text, images, and audio. Ready to download from HuggingFace (3.1.15GB)",
-            url = "https://huggingface.co/google/gemma-3n-E2B-it-litert-lm/resolve/73b019b63436d346f68dd9c1dbfd117eb264d888/gemma-3n-E2B-it-int4.litertlm?download=true",
+            url = "https://hf-mirror.com/google/gemma-3n-E2B-it-litert-lm/resolve/73b019b63436d346f68dd9c1dbfd117eb264d888/gemma-3n-E2B-it-int4.litertlm?download=true",
             category = "multimodal",
             sizeBytes = 3388604416L, // 3.1.15GB (actual downloaded size)
             source = "Google (LiteRT LM)",
@@ -3497,7 +3497,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3n E4B",
             description = "Google Gemma-3n E4B with multimodal capabilities (text, vision, and audio). Effective 4B parameters with selective parameter activation. Supports 4k context window and multimodal input including text, images, and audio. Ready to download from HuggingFace (4.33GB)",
-            url = "https://huggingface.co/google/gemma-3n-E4B-it-litert-lm/resolve/3d0179a0648381585ab337e170b7517aae8e0ce4/gemma-3n-E4B-it-int4.litertlm?download=true",
+            url = "https://hf-mirror.com/google/gemma-3n-E4B-it-litert-lm/resolve/3d0179a0648381585ab337e170b7517aae8e0ce4/gemma-3n-E4B-it-int4.litertlm?download=true",
             category = "multimodal",
             sizeBytes = 4652318720L, // 4.33GB (actual downloaded size)
             source = "Google (LiteRT LM)",
@@ -3513,7 +3513,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 E2B",
             description = "Google Gemma-4 E2B multimodal model (text, vision, audio). Effective 2B parameters with 32k context. Embedding params are memory-mapped; only ~0.8GB decoder weights stay in RAM. GPU uses ~676MB, CPU uses ~1.7GB (Google benchmarks). Vision and audio loaded on-demand. Ready to download from HuggingFace (2.58GB)",
-            url = "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm/resolve/a4a831c060880f3733135ad22f10e0e9f758f45d/gemma-4-E2B-it.litertlm?download=true",
+            url = "https://hf-mirror.com/litert-community/gemma-4-E2B-it-litert-lm/resolve/a4a831c060880f3733135ad22f10e0e9f758f45d/gemma-4-E2B-it.litertlm?download=true",
             category = "multimodal",
             sizeBytes = 2588147712L, // 2,588,147,712 bytes (2.58 GB actual)
             source = "Google (LiteRT LM)",
@@ -3527,7 +3527,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 E4B",
             description = "Google Gemma-4 E4B multimodal model (text, vision, audio). Effective 4B parameters with 32k context. Embedding params are memory-mapped; ~2.24GB decoder weights stay in RAM. GPU uses ~710MB, CPU uses ~3.2GB (Google benchmarks). Vision and audio loaded on-demand. Ready to download from HuggingFace (3.65GB)",
-            url = "https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm/resolve/28299f30ee4d43294517a4ac93abd6163412f07f/gemma-4-E4B-it.litertlm?download=true",
+            url = "https://hf-mirror.com/litert-community/gemma-4-E4B-it-litert-lm/resolve/28299f30ee4d43294517a4ac93abd6163412f07f/gemma-4-E4B-it.litertlm?download=true",
             category = "multimodal",
             sizeBytes = 3659530240L, // 3,659,530,240 bytes (3.65 GB actual)
             source = "Google (LiteRT LM)",
@@ -3541,7 +3541,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B",
             description = "Google Gemma-4 12B text model. 12B parameters with 32k context. GPU acceleration required. Ready to download from HuggingFace (6.54GB)",
-            url = "https://huggingface.co/litert-community/gemma-4-12B-it-litert-lm/resolve/44cf85a326f79b814fa86a60af414c042755b43a/gemma-4-12B-it.litertlm?download=true",
+            url = "https://hf-mirror.com/litert-community/gemma-4-12B-it-litert-lm/resolve/44cf85a326f79b814fa86a60af414c042755b43a/gemma-4-12B-it.litertlm?download=true",
             category = "text",
             sizeBytes = 6547589312L, // 6,547,589,312 bytes (6.54 GB actual)
             source = "Google (LiteRT LM)",
@@ -3557,7 +3557,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (UD-IQ2_M, GGUF)",
             description = "Google Gemma-4 12B UD-IQ2_M GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~3.92 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-IQ2_M.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-IQ2_M.gguf",
             category = "multimodal",
             sizeBytes = 4213351840L,
             source = "Google via unsloth",
@@ -3571,7 +3571,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (UD-IQ3_XXS, GGUF)",
             description = "Google Gemma-4 12B UD-IQ3_XXS GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~4.32 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-IQ3_XXS.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-IQ3_XXS.gguf",
             category = "multimodal",
             sizeBytes = 4639714720L,
             source = "Google via unsloth",
@@ -3585,7 +3585,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (UD-Q2_K_XL, GGUF)",
             description = "Google Gemma-4 12B UD-Q2_K_XL GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~4.34 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q2_K_XL.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q2_K_XL.gguf",
             category = "multimodal",
             sizeBytes = 4661418400L,
             source = "Google via unsloth",
@@ -3599,7 +3599,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Q3_K_S, GGUF)",
             description = "Google Gemma-4 12B Q3_K_S GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~4.78 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q3_K_S.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q3_K_S.gguf",
             category = "multimodal",
             sizeBytes = 5135013280L,
             source = "Google via unsloth",
@@ -3613,7 +3613,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Q3_K_M, GGUF)",
             description = "Google Gemma-4 12B Q3_K_M GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~5.30 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q3_K_M.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q3_K_M.gguf",
             category = "multimodal",
             sizeBytes = 5693871520L,
             source = "Google via unsloth",
@@ -3627,7 +3627,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (UD-Q3_K_XL, GGUF)",
             description = "Google Gemma-4 12B UD-Q3_K_XL GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~5.61 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q3_K_XL.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q3_K_XL.gguf",
             category = "multimodal",
             sizeBytes = 6022683040L,
             source = "Google via unsloth",
@@ -3641,7 +3641,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (IQ4_XS, GGUF)",
             description = "Google Gemma-4 12B IQ4_XS GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~5.94 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-IQ4_XS.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-IQ4_XS.gguf",
             category = "multimodal",
             sizeBytes = 6375732640L,
             source = "Google via unsloth",
@@ -3655,7 +3655,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (IQ4_NL, GGUF)",
             description = "Google Gemma-4 12B IQ4_NL GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~6.25 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-IQ4_NL.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-IQ4_NL.gguf",
             category = "multimodal",
             sizeBytes = 6716356000L,
             source = "Google via unsloth",
@@ -3669,7 +3669,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Q4_0, GGUF)",
             description = "Google Gemma-4 12B Q4_0 GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~6.28 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q4_0.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q4_0.gguf",
             category = "multimodal",
             sizeBytes = 6738474400L,
             source = "Google via unsloth",
@@ -3683,7 +3683,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Q4_K_S, GGUF)",
             description = "Google Gemma-4 12B Q4_K_S GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~6.30 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q4_K_S.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q4_K_S.gguf",
             category = "multimodal",
             sizeBytes = 6764524960L,
             source = "Google via unsloth",
@@ -3697,7 +3697,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Q4_K_M, GGUF)",
             description = "Google Gemma-4 12B Q4_K_M GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~6.63 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q4_K_M.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q4_K_M.gguf",
             category = "multimodal",
             sizeBytes = 7121860000L,
             source = "Google via unsloth",
@@ -3711,7 +3711,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (UD-Q4_K_XL, GGUF)",
             description = "Google Gemma-4 12B UD-Q4_K_XL GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~6.86 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q4_K_XL.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q4_K_XL.gguf",
             category = "multimodal",
             sizeBytes = 7366421920L,
             source = "Google via unsloth",
@@ -3725,7 +3725,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Q4_1, GGUF)",
             description = "Google Gemma-4 12B Q4_1 GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~6.89 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q4_1.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q4_1.gguf",
             category = "multimodal",
             sizeBytes = 7397602720L,
             source = "Google via unsloth",
@@ -3739,7 +3739,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Q5_K_S, GGUF)",
             description = "Google Gemma-4 12B Q5_K_S GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~7.64 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q5_K_S.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q5_K_S.gguf",
             category = "multimodal",
             sizeBytes = 8204678560L,
             source = "Google via unsloth",
@@ -3753,7 +3753,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Q5_K_M, GGUF)",
             description = "Google Gemma-4 12B Q5_K_M GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~7.83 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q5_K_M.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q5_K_M.gguf",
             category = "multimodal",
             sizeBytes = 8413574560L,
             source = "Google via unsloth",
@@ -3767,7 +3767,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (UD-Q5_K_XL, GGUF)",
             description = "Google Gemma-4 12B UD-Q5_K_XL GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~8.01 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q5_K_XL.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q5_K_XL.gguf",
             category = "multimodal",
             sizeBytes = 8606020000L,
             source = "Google via unsloth",
@@ -3781,7 +3781,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Q6_K, GGUF)",
             description = "Google Gemma-4 12B Q6_K GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~9.11 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q6_K.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-Q6_K.gguf",
             category = "multimodal",
             sizeBytes = 9786021280L,
             source = "Google via unsloth",
@@ -3795,7 +3795,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (UD-Q6_K_XL, GGUF)",
             description = "Google Gemma-4 12B UD-Q6_K_XL GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~9.95 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q6_K_XL.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/gemma-4-12b-it-UD-Q6_K_XL.gguf",
             category = "multimodal",
             sizeBytes = 10685011360L,
             source = "Google via unsloth",
@@ -3809,7 +3809,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Vision Projector, BF16)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-4 12B GGUF models. BF16 variant. ~167 MB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/mmproj-BF16.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/mmproj-BF16.gguf",
             category = "multimodal",
             sizeBytes = 175115840L,
             source = "Google via unsloth",
@@ -3823,7 +3823,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Vision Projector, F16)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-4 12B GGUF models. F16 variant. ~167 MB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/mmproj-F16.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/mmproj-F16.gguf",
             category = "multimodal",
             sizeBytes = 175115840L,
             source = "Google via unsloth",
@@ -3837,7 +3837,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 12B (Vision Projector, F32)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-4 12B GGUF models. F32 variant. ~200 MB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/mmproj-F32.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-12b-it-GGUF/resolve/3249fa54d5efa384afc552cc6700ad091efd5c39/mmproj-F32.gguf",
             category = "multimodal",
             sizeBytes = 209522240L,
             source = "Google via unsloth",
@@ -3853,7 +3853,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 26B-A4B (UD-IQ2_XXS, GGUF)",
             description = "Google Gemma-4 26B-A4B UD-IQ2_XXS GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~9.24 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-IQ2_XXS.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-IQ2_XXS.gguf",
             category = "multimodal",
             sizeBytes = 9922478624L,
             source = "Google via unsloth",
@@ -3867,7 +3867,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 26B-A4B (UD-IQ2_M, GGUF)",
             description = "Google Gemma-4 26B-A4B UD-IQ2_M GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~9.33 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-IQ2_M.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-IQ2_M.gguf",
             category = "multimodal",
             sizeBytes = 10014753312L,
             source = "Google via unsloth",
@@ -3881,7 +3881,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 26B-A4B (UD-Q2_K_XL, GGUF)",
             description = "Google Gemma-4 26B-A4B UD-Q2_K_XL GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~9.82 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-Q2_K_XL.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-Q2_K_XL.gguf",
             category = "multimodal",
             sizeBytes = 10546932256L,
             source = "Google via unsloth",
@@ -3895,7 +3895,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 26B-A4B (UD-IQ3_S, GGUF)",
             description = "Google Gemma-4 26B-A4B UD-IQ3_S GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~10.51 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-IQ3_S.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-IQ3_S.gguf",
             category = "multimodal",
             sizeBytes = 11289669152L,
             source = "Google via unsloth",
@@ -3909,7 +3909,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 26B-A4B (UD-IQ3_XXS, GGUF)",
             description = "Google Gemma-4 26B-A4B UD-IQ3_XXS GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~10.63 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf",
             category = "multimodal",
             sizeBytes = 11416546848L,
             source = "Google via unsloth",
@@ -3923,7 +3923,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 26B-A4B (Vision Projector, BF16)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-4 26B-A4B GGUF models. BF16 variant. ~1.11 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/mmproj-BF16.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/mmproj-BF16.gguf",
             category = "multimodal",
             sizeBytes = 1194828256L,
             source = "Google via unsloth",
@@ -3937,7 +3937,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 26B-A4B (Vision Projector, F16)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-4 26B-A4B GGUF models. F16 variant. ~1.11 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/mmproj-F16.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/mmproj-F16.gguf",
             category = "multimodal",
             sizeBytes = 1193058784L,
             source = "Google via unsloth",
@@ -3951,7 +3951,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 26B-A4B (Vision Projector, F32)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-4 26B-A4B GGUF models. F32 variant. ~2.13 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/mmproj-F32.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/3bb10d594514ef4edb7f3a65d41a7e4eb8c5767a/mmproj-F32.gguf",
             category = "multimodal",
             sizeBytes = 2291200480L,
             source = "Google via unsloth",
@@ -3967,7 +3967,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 31B (UD-IQ2_XXS, GGUF)",
             description = "Google Gemma-4 31B UD-IQ2_XXS GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~7.95 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/gemma-4-31B-it-UD-IQ2_XXS.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/gemma-4-31B-it-UD-IQ2_XXS.gguf",
             category = "multimodal",
             sizeBytes = 8534293504L,
             source = "Google via unsloth",
@@ -3981,7 +3981,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 31B (UD-IQ2_M, GGUF)",
             description = "Google Gemma-4 31B UD-IQ2_M GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~10.01 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/gemma-4-31B-it-UD-IQ2_M.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/gemma-4-31B-it-UD-IQ2_M.gguf",
             category = "multimodal",
             sizeBytes = 10752818176L,
             source = "Google via unsloth",
@@ -3995,7 +3995,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 31B (UD-Q2_K_XL, GGUF)",
             description = "Google Gemma-4 31B UD-Q2_K_XL GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~10.97 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/gemma-4-31B-it-UD-Q2_K_XL.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/gemma-4-31B-it-UD-Q2_K_XL.gguf",
             category = "multimodal",
             sizeBytes = 11774989312L,
             source = "Google via unsloth",
@@ -4009,7 +4009,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 31B (UD-IQ3_XXS, GGUF)",
             description = "Google Gemma-4 31B UD-IQ3_XXS GGUF. Supports text + vision — download the Vision Projector (mmproj) to enable image input. ~11.02 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/gemma-4-31B-it-UD-IQ3_XXS.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/gemma-4-31B-it-UD-IQ3_XXS.gguf",
             category = "multimodal",
             sizeBytes = 11837780992L,
             source = "Google via unsloth",
@@ -4023,7 +4023,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 31B (Vision Projector, BF16)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-4 31B GGUF models. BF16 variant. ~1.12 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/mmproj-BF16.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/mmproj-BF16.gguf",
             category = "multimodal",
             sizeBytes = 1200726496L,
             source = "Google via unsloth",
@@ -4037,7 +4037,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 31B (Vision Projector, F16)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-4 31B GGUF models. F16 variant. ~1.12 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/mmproj-F16.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/mmproj-F16.gguf",
             category = "multimodal",
             sizeBytes = 1198957024L,
             source = "Google via unsloth",
@@ -4051,7 +4051,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-4 31B (Vision Projector, F32)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-4 31B GGUF models. F32 variant. ~2.14 GB download.",
-            url = "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/mmproj-F32.gguf",
+            url = "https://hf-mirror.com/unsloth/gemma-4-31B-it-GGUF/resolve/8906b3db2e669a0b1d6293c315d3f9fbf934a86d/mmproj-F32.gguf",
             category = "multimodal",
             sizeBytes = 2302996960L,
             source = "Google via unsloth",
@@ -4067,7 +4067,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3 4B (Q4_0, GGUF)",
             description = "Google Gemma-3 4B quantized GGUF (Q4_0). Supports text + vision — download the Vision Projector (mmproj) to enable image input.",
-            url = "https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/gemma-3-4b-it-q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/gemma-3-4b-it-q4_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 3155051328L, // 3,155,051,328 bytes (~3008.89 MB)
             source = "Google",
@@ -4081,7 +4081,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3 4B (Vision Projector, BF16)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-3 4B. BF16 variant for accurate visual encodings.",
-            url = "https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/mmproj-model-f16-4B.gguf?download=true",
+            url = "https://hf-mirror.com/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/mmproj-model-f16-4B.gguf?download=true",
             category = "multimodal",
             sizeBytes = 851251104L, // 851,251,104 bytes (~811.82 MB)
             source = "Google",
@@ -4094,7 +4094,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3 12B (Q4_0, GGUF)",
             description = "Google Gemma-3 12B quantized GGUF (Q4_0). Supports text + vision — download the Vision Projector (mmproj) to enable image input.",
-            url = "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf/resolve/main/gemma-3-12b-it-q4_0.gguf?download=true",
+            url = "https://hf-mirror.com/google/gemma-3-12b-it-qat-q4_0-gguf/resolve/main/gemma-3-12b-it-q4_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 8074473920L, // 8,074,473,920 bytes (~7700.42 MB)
             source = "Google",
@@ -4108,7 +4108,7 @@ object ModelData {
         LLMModel(
             name = "Gemma-3 12B (Vision Projector, BF16)",
             description = "Vision Projector (mmproj) required to enable image input for Gemma-3 12B. BF16 variant for accurate visual encodings.",
-            url = "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf/resolve/main/mmproj-model-f16-12B.gguf?download=true",
+            url = "https://hf-mirror.com/google/gemma-3-12b-it-qat-q4_0-gguf/resolve/main/mmproj-model-f16-12B.gguf?download=true",
             category = "multimodal",
             sizeBytes = 854200224L, // 854,200,224 bytes (~814.63 MB)
             source = "Google",
@@ -4123,7 +4123,7 @@ object ModelData {
         LLMModel(
             name = "Gecko-110M (64D Quantized)",
             description = "Compact Gecko embedding model with 64 dimensions, quantized for minimal storage and fast inference.",
-            url = "https://huggingface.co/litert-community/Gecko-110m-en/resolve/main/Gecko_64_quant.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/Gecko-110m-en/resolve/main/Gecko_64_quant.tflite?download=true",
             category = "embedding",
             sizeBytes = 112175104L, // 106.98 MB
             source = "Google via LiteRT Community",
@@ -4136,7 +4136,7 @@ object ModelData {
         LLMModel(
             name = "Gecko-110M (64D Float32)",
             description = "Gecko embedding model with 64 dimensions in full precision for highest quality with small vectors.",
-            url = "https://huggingface.co/litert-community/Gecko-110m-en/resolve/main/Gecko_64_f32.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/Gecko-110m-en/resolve/main/Gecko_64_f32.tflite?download=true",
             category = "embedding",
             sizeBytes = 441231836L, // 420.79 MB
             source = "Google via LiteRT Community",
@@ -4149,7 +4149,7 @@ object ModelData {
         LLMModel(
             name = "Gecko-110M (256D Quantized)",
             description = "Balanced Gecko embedding model with 256 dimensions, quantized for good quality and reasonable size.",
-            url = "https://huggingface.co/litert-community/Gecko-110m-en/resolve/main/Gecko_256_quant.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/Gecko-110m-en/resolve/main/Gecko_256_quant.tflite?download=true",
             category = "embedding",
             sizeBytes = 114141184L, // 108.85 MB
             source = "Google via LiteRT Community",
@@ -4162,7 +4162,7 @@ object ModelData {
         LLMModel(
             name = "Gecko-110M (256D Float32)",
             description = "High-quality Gecko embedding model with 256 dimensions in full precision.",
-            url = "https://huggingface.co/litert-community/Gecko-110m-en/resolve/main/Gecko_256_f32.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/Gecko-110m-en/resolve/main/Gecko_256_f32.tflite?download=true",
             category = "embedding",
             sizeBytes = 443197916L, // 422.67 MB
             source = "Google via LiteRT Community",
@@ -4175,7 +4175,7 @@ object ModelData {
         LLMModel(
             name = "Gecko-110M (512D Quantized)",
             description = "High-dimensional Gecko embedding model with 512 dimensions, quantized for balanced performance.",
-            url = "https://huggingface.co/litert-community/Gecko-110m-en/resolve/main/Gecko_512_quant.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/Gecko-110m-en/resolve/main/Gecko_512_quant.tflite?download=true",
             category = "embedding",
             sizeBytes = 120432640L, // 114.85 MB
             source = "Google via LiteRT Community",
@@ -4188,7 +4188,7 @@ object ModelData {
         LLMModel(
             name = "Gecko-110M (512D Float32)",
             description = "Premium Gecko embedding model with 512 dimensions in full precision for best semantic understanding.",
-            url = "https://huggingface.co/litert-community/Gecko-110m-en/resolve/main/Gecko_512_f32.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/Gecko-110m-en/resolve/main/Gecko_512_f32.tflite?download=true",
             category = "embedding",
             sizeBytes = 449489372L, // 428.67 MB
             source = "Google via LiteRT Community",
@@ -4201,7 +4201,7 @@ object ModelData {
         LLMModel(
             name = "Gecko-110M (1024D Quantized)",
             description = "Maximum dimension Gecko embedding model with 1024 dimensions, quantized for comprehensive semantic representation.",
-            url = "https://huggingface.co/litert-community/Gecko-110m-en/resolve/main/Gecko_1024_quant.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/Gecko-110m-en/resolve/main/Gecko_1024_quant.tflite?download=true",
             category = "embedding",
             sizeBytes = 145598464L, // 138.85 MB
             source = "Google via LiteRT Community",
@@ -4214,7 +4214,7 @@ object ModelData {
         LLMModel(
             name = "Gecko-110M (1024D Float32)",
             description = "Top-tier Gecko embedding model with 1024 dimensions in full precision for maximum semantic accuracy.",
-            url = "https://huggingface.co/litert-community/Gecko-110m-en/resolve/main/Gecko_1024_f32.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/Gecko-110m-en/resolve/main/Gecko_1024_f32.tflite?download=true",
             category = "embedding",
             sizeBytes = 474655196L, // 452.67 MB
             source = "Google via LiteRT Community",
@@ -4229,7 +4229,7 @@ object ModelData {
         LLMModel(
             name = "EmbeddingGemma 300M (256 seq)",
             description = "Google EmbeddingGemma 300M model with 256 sequence length. High-quality text embeddings for semantic search and similarity tasks. Mixed-precision for optimal performance. Ready to download from HuggingFace (170.84MB)",
-            url = "https://huggingface.co/litert-community/embeddinggemma-300m/resolve/main/embeddinggemma-300M_seq256_mixed-precision.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/embeddinggemma-300m/resolve/main/embeddinggemma-300M_seq256_mixed-precision.tflite?download=true",
             category = "embedding",
             sizeBytes = 179131736L, // 170.84 MB
             source = "Google via LiteRT Community",
@@ -4242,7 +4242,7 @@ object ModelData {
         LLMModel(
             name = "EmbeddingGemma 300M (512 seq)",
             description = "Google EmbeddingGemma 300M model with 512 sequence length. High-quality text embeddings for semantic search and similarity tasks. Mixed-precision for optimal performance. Ready to download from HuggingFace (170.84MB)",
-            url = "https://huggingface.co/litert-community/embeddinggemma-300m/resolve/main/embeddinggemma-300M_seq512_mixed-precision.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/embeddinggemma-300m/resolve/main/embeddinggemma-300M_seq512_mixed-precision.tflite?download=true",
             category = "embedding",
             sizeBytes = 179132472L, // 170.84 MB
             source = "Google via LiteRT Community",
@@ -4255,7 +4255,7 @@ object ModelData {
         LLMModel(
             name = "EmbeddingGemma 300M (1024 seq)",
             description = "Google EmbeddingGemma 300M model with 1024 sequence length. High-quality text embeddings for semantic search and similarity tasks. Mixed-precision for optimal performance. Ready to download from HuggingFace (174.84MB)",
-            url = "https://huggingface.co/litert-community/embeddinggemma-300m/resolve/main/embeddinggemma-300M_seq1024_mixed-precision.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/embeddinggemma-300m/resolve/main/embeddinggemma-300M_seq1024_mixed-precision.tflite?download=true",
             category = "embedding",
             sizeBytes = 183329528L, // 174.84 MB
             source = "Google via LiteRT Community",
@@ -4268,7 +4268,7 @@ object ModelData {
         LLMModel(
             name = "EmbeddingGemma 300M (2048 seq)",
             description = "Google EmbeddingGemma 300M model with 2048 sequence length. High-quality text embeddings for semantic search and similarity tasks. Mixed-precision for optimal performance. Ready to download from HuggingFace (186.84MB)",
-            url = "https://huggingface.co/litert-community/embeddinggemma-300m/resolve/main/embeddinggemma-300M_seq2048_mixed-precision.tflite?download=true",
+            url = "https://hf-mirror.com/litert-community/embeddinggemma-300m/resolve/main/embeddinggemma-300M_seq2048_mixed-precision.tflite?download=true",
             category = "embedding",
             sizeBytes = 195912440L, // 186.84 MB
             source = "Google via LiteRT Community",
@@ -4283,7 +4283,7 @@ object ModelData {
         LLMModel(
             name = "Absolute Reality (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "Absolute Reality SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.06 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/AbsoluteReality_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/AbsoluteReality_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1138900992L    // 1.06 GB
@@ -4301,7 +4301,7 @@ object ModelData {
         LLMModel(
             name = "Absolute Reality (CPU)",
             description = "Absolute Reality SD1.5 model for CPU inference using MNN framework. Works on all Android devices without NPU requirements. Supports txt2img generation with flexible resolutions (128x128 to 512x512). Slower than NPU but compatible with all devices. ~1.2 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-mnn/resolve/main/AbsoluteReality.zip",
+            url = "https://hf-mirror.com/xororz/sd-mnn/resolve/main/AbsoluteReality.zip",
             category = "image_generation",
             sizeBytes = 1288490188L, // ~1.2 GB
             source = "Stable Diffusion 1.5 (MNN via xororz)",
@@ -4317,7 +4317,7 @@ object ModelData {
         LLMModel(
             name = "Realisian V6 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "Realisian V6 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/RealisianV6_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/RealisianV6_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1044639038L    // 996 MB
@@ -4335,7 +4335,7 @@ object ModelData {
         LLMModel(
             name = "Realistic Vision Hyper (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "Realistic Vision Hyper SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/RealisticVisionHyper_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/RealisticVisionHyper_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1072234959L    // 1.02 GB
@@ -4353,7 +4353,7 @@ object ModelData {
         LLMModel(
             name = "SweetMix V22 Flat (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "SweetMix V22 Flat SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/SweetMixV22Flat_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/SweetMixV22Flat_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1032689513L    // 985 MB
@@ -4371,7 +4371,7 @@ object ModelData {
         LLMModel(
             name = "Anything V5 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "Anything V5 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/AnythingV5_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/AnythingV5_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1061290117L    // 1.01 GB
@@ -4389,7 +4389,7 @@ object ModelData {
         LLMModel(
             name = "Anything V5 (CPU)",
             description = "Anything V5 SD1.5 model for CPU inference using MNN framework. Highly popular anime-style model. Works on all Android devices without NPU requirements. Supports txt2img generation with flexible resolutions. 1.1 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-mnn/resolve/main/AnythingV5.zip",
+            url = "https://hf-mirror.com/xororz/sd-mnn/resolve/main/AnythingV5.zip",
             category = "image_generation",
             sizeBytes = 1191044427L, // 1.1 GB
             source = "Stable Diffusion 1.5 (MNN via xororz)",
@@ -4404,7 +4404,7 @@ object ModelData {
         LLMModel(
             name = "ChilloutMix (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "ChilloutMix SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/ChilloutMix_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/ChilloutMix_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1073617353L    // 1.02 GB
@@ -4422,7 +4422,7 @@ object ModelData {
         LLMModel(
             name = "ChilloutMix (CPU)",
             description = "ChilloutMix SD1.5 model for CPU inference using MNN framework. Works on all Android devices without NPU requirements. Supports txt2img generation with flexible resolutions. 1.2 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-mnn/resolve/main/ChilloutMix.zip",
+            url = "https://hf-mirror.com/xororz/sd-mnn/resolve/main/ChilloutMix.zip",
             category = "image_generation",
             sizeBytes = 1203917293L, // 1.2 GB
             source = "Stable Diffusion 1.5 (MNN via xororz)",
@@ -4437,7 +4437,7 @@ object ModelData {
         LLMModel(
             name = "CrossKemono 2.5 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "CrossKemono 2.5 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/CrossKemono2.5_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/CrossKemono2.5_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1072385058L    // 1.02 GB
@@ -4455,7 +4455,7 @@ object ModelData {
         LLMModel(
             name = "CuteYukiMix (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "CuteYukiMix SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/CuteYukiMix_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/CuteYukiMix_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1059582346L    // 1.01 GB
@@ -4473,7 +4473,7 @@ object ModelData {
         LLMModel(
             name = "CuteYukiMix (CPU)",
             description = "CuteYukiMix SD1.5 model for CPU inference using MNN framework. Works on all Android devices without NPU requirements. Supports txt2img generation with flexible resolutions. 1.1 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-mnn/resolve/main/CuteYukiMix.zip",
+            url = "https://hf-mirror.com/xororz/sd-mnn/resolve/main/CuteYukiMix.zip",
             category = "image_generation",
             sizeBytes = 1188112898L, // 1.1 GB
             source = "Stable Diffusion 1.5 (MNN via xororz)",
@@ -4488,7 +4488,7 @@ object ModelData {
         LLMModel(
             name = "DarkSushi V4 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "DarkSushi V4 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/DarkSushiV4_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/DarkSushiV4_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1033284420L    // 986 MB
@@ -4506,7 +4506,7 @@ object ModelData {
         LLMModel(
             name = "DreamShaper V8 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "DreamShaper V8 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/DreamShaperV8_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/DreamShaperV8_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1032481706L    // 985 MB
@@ -4524,7 +4524,7 @@ object ModelData {
         LLMModel(
             name = "HyperSpire V5 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "HyperSpire V5 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/HyperSpireV5_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/HyperSpireV5_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1071984420L    // 1.02 GB
@@ -4542,7 +4542,7 @@ object ModelData {
         LLMModel(
             name = "Majicmix Realistic V7 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "Majicmix Realistic V7 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/MajicmixRealisticV7_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/MajicmixRealisticV7_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1059073569L    // 1.01 GB
@@ -4560,7 +4560,7 @@ object ModelData {
         LLMModel(
             name = "MeinaMix V12 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "MeinaMix V12 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/MeinaMixV12_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/MeinaMixV12_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1032314916L    // 985 MB
@@ -4578,7 +4578,7 @@ object ModelData {
         LLMModel(
             name = "Mistoon Anime V3 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "Mistoon Anime V3 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/MistoonAnimeV3_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/MistoonAnimeV3_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1057071590L    // 1.01 GB
@@ -4596,7 +4596,7 @@ object ModelData {
         LLMModel(
             name = "Nai Anime V2 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "Nai Anime V2 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/NaiAnimeV2_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/NaiAnimeV2_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1055448913L    // 1.01 GB
@@ -4614,7 +4614,7 @@ object ModelData {
         LLMModel(
             name = "NeverEndingDream V122 (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "NeverEndingDream V122 SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/NeverEndingDreamV122_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/NeverEndingDreamV122_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1032366907L    // 985 MB
@@ -4632,7 +4632,7 @@ object ModelData {
         LLMModel(
             name = "QteaMix (NPU - ${DeviceInfo.getSdQnnPackageSuffix()})",
             description = "QteaMix SD1.5 model optimized for Qualcomm NPU acceleration using QNN SDK. Supports txt2img generation at 512x512 resolution. Requires Snapdragon 8 Gen 1 or newer with Hexagon NPU. Device detected: ${DeviceInfo.getDeviceSoc()}. ~1.0 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-qnn/resolve/main/QteaMix_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
+            url = "https://hf-mirror.com/xororz/sd-qnn/resolve/main/QteaMix_qnn2.28_${DeviceInfo.getSdQnnPackageSuffix()}.zip",
             category = "image_generation",
             sizeBytes = when(DeviceInfo.getSdQnnPackageSuffix()) {
                 "8gen1" -> 1061160208L    // 1.01 GB
@@ -4650,7 +4650,7 @@ object ModelData {
         LLMModel(
             name = "QteaMix (CPU)",
             description = "QteaMix SD1.5 model for CPU inference using MNN framework. Works on all Android devices without NPU requirements. Supports txt2img generation with flexible resolutions. 1.1 GB download from HuggingFace.",
-            url = "https://huggingface.co/xororz/sd-mnn/resolve/main/QteaMix.zip",
+            url = "https://hf-mirror.com/xororz/sd-mnn/resolve/main/QteaMix.zip",
             category = "image_generation",
             sizeBytes = 1191096924L, // 1.1 GB
             source = "Stable Diffusion 1.5 (MNN via xororz)",
@@ -4667,7 +4667,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.1 3B (Q2_K_XL)",
             description = "IBM Granite 4.1 3B with Q2_K_XL quantization. Ultra-compact 2-bit variant for low-memory devices. 512K context. (1.32GB)",
-            url = "https://huggingface.co/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q2_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q2_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 1414548800L, // 1.32GB (actual size from HuggingFace)
             source = "IBM via Unsloth",
@@ -4680,7 +4680,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.1 3B (IQ3_XXS)",
             description = "IBM Granite 4.1 3B with IQ3_XXS quantization. Ultra-compact 3-bit variant. 512K context. (1.32GB)",
-            url = "https://huggingface.co/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-IQ3_XXS.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-IQ3_XXS.gguf?download=true",
             category = "text",
             sizeBytes = 1416576320L, // 1.32GB (actual size from HuggingFace)
             source = "IBM via Unsloth",
@@ -4693,7 +4693,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.1 3B (Q3_K_XL)",
             description = "IBM Granite 4.1 3B with Q3_K_XL quantization. Balanced 3-bit variant. 512K context. (1.67GB)",
-            url = "https://huggingface.co/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q3_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q3_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 1794667840L, // 1.67GB (actual size from HuggingFace)
             source = "IBM via Unsloth",
@@ -4706,7 +4706,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.1 3B (Q4_K_XL)",
             description = "IBM Granite 4.1 3B with Q4_K_XL quantization. Standard 4-bit variant. 512K context. (2.00GB)",
-            url = "https://huggingface.co/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q4_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q4_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 2152381760L, // 2.00GB (actual size from HuggingFace)
             source = "IBM via Unsloth",
@@ -4719,7 +4719,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.1 3B (Q5_K_XL)",
             description = "IBM Granite 4.1 3B with Q5_K_XL quantization. High-quality 5-bit variant. 512K context. (2.28GB)",
-            url = "https://huggingface.co/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q5_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q5_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 2453939520L, // 2.28GB (actual size from HuggingFace)
             source = "IBM via Unsloth",
@@ -4732,7 +4732,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.1 3B (Q6_K_XL)",
             description = "IBM Granite 4.1 3B with Q6_K_XL quantization. High-quality 6-bit variant. 512K context. (2.84GB)",
-            url = "https://huggingface.co/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q6_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q6_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 3048299840L, // 2.84GB (actual size from HuggingFace)
             source = "IBM via Unsloth",
@@ -4745,7 +4745,7 @@ object ModelData {
         LLMModel(
             name = "Granite 4.1 3B (Q8_K_XL)",
             description = "IBM Granite 4.1 3B with Q8_K_XL quantization. Maximum quality 8-bit variant. 512K context. (3.99GB)",
-            url = "https://huggingface.co/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q8_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/granite-4.1-3b-GGUF/resolve/main/granite-4.1-3b-UD-Q8_K_XL.gguf?download=true",
             category = "text",
             sizeBytes = 4284472640L, // 3.99GB (actual size from HuggingFace)
             source = "IBM via Unsloth",
@@ -4760,7 +4760,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 8B Instruct (Q4_K_M)",
             description = "MistralAI's 8B instruct model. Q4_K_M quantization. 128k context. Supports Vision (Requires mmproj).",
-            url = "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF/resolve/0102285ad796bd99af90f58de616092e5630e970/Ministral-3-8B-Instruct-2512-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-8B-Instruct-2512-GGUF/resolve/0102285ad796bd99af90f58de616092e5630e970/Ministral-3-8B-Instruct-2512-Q4_K_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 5198911904L,
             source = "MistralAI",
@@ -4773,7 +4773,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 8B Instruct (Q5_K_M)",
             description = "MistralAI's 8B instruct model. Q5_K_M quantization. 128k context. Supports Vision (Requires mmproj).",
-            url = "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF/resolve/0102285ad796bd99af90f58de616092e5630e970/Ministral-3-8B-Instruct-2512-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-8B-Instruct-2512-GGUF/resolve/0102285ad796bd99af90f58de616092e5630e970/Ministral-3-8B-Instruct-2512-Q5_K_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 6059268512L,
             source = "MistralAI",
@@ -4786,7 +4786,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 8B Instruct (Q8_0)",
             description = "MistralAI's 8B instruct model. Q8_0 quantization. 128k context. Supports Vision (Requires mmproj).",
-            url = "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF/resolve/0102285ad796bd99af90f58de616092e5630e970/Ministral-3-8B-Instruct-2512-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-8B-Instruct-2512-GGUF/resolve/0102285ad796bd99af90f58de616092e5630e970/Ministral-3-8B-Instruct-2512-Q8_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 9029392800L,
             source = "MistralAI",
@@ -4799,7 +4799,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 8B Instruct (Vision Projector, BF16)",
             description = "Multimodal Vision Projector for Ministral-3 8B models. Specifically the BF16 variant required for image input capabilities.",
-            url = "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF/resolve/0102285ad796bd99af90f58de616092e5630e970/Ministral-3-8B-Instruct-2512-BF16-mmproj.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-8B-Instruct-2512-GGUF/resolve/0102285ad796bd99af90f58de616092e5630e970/Ministral-3-8B-Instruct-2512-BF16-mmproj.gguf?download=true",
             category = "multimodal",
             sizeBytes = 858283168L,
             source = "MistralAI",
@@ -4814,7 +4814,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 14B Instruct (Q4_K_M)",
             description = "MistralAI's 14B instruct model. Q4_K_M quantization. 128k context. Supports Vision (Requires mmproj).",
-            url = "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/resolve/74fac473c43357d7fb2671713608183cc72496d0/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-14B-Instruct-2512-GGUF/resolve/74fac473c43357d7fb2671713608183cc72496d0/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 8239593024L,
             source = "MistralAI",
@@ -4827,7 +4827,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 14B Instruct (Q5_K_M)",
             description = "MistralAI's 14B instruct model. Q5_K_M quantization. 128k context. Supports Vision (Requires mmproj).",
-            url = "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/resolve/74fac473c43357d7fb2671713608183cc72496d0/Ministral-3-14B-Instruct-2512-Q5_K_M.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-14B-Instruct-2512-GGUF/resolve/74fac473c43357d7fb2671713608183cc72496d0/Ministral-3-14B-Instruct-2512-Q5_K_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 9621091904L,
             source = "MistralAI",
@@ -4840,7 +4840,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 14B Instruct (Q8_0)",
             description = "MistralAI's 14B instruct model. Q8_0 quantization. 128k context. Supports Vision (Requires mmproj).",
-            url = "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/resolve/74fac473c43357d7fb2671713608183cc72496d0/Ministral-3-14B-Instruct-2512-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-14B-Instruct-2512-GGUF/resolve/74fac473c43357d7fb2671713608183cc72496d0/Ministral-3-14B-Instruct-2512-Q8_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 14359836224L,
             source = "MistralAI",
@@ -4853,7 +4853,7 @@ object ModelData {
         LLMModel(
             name = "Ministral-3 14B Instruct (Vision Projector, BF16)",
             description = "Multimodal Vision Projector for Ministral-3 14B models. Specifically the BF16 variant required for image input capabilities.",
-            url = "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF/resolve/74fac473c43357d7fb2671713608183cc72496d0/Ministral-3-14B-Instruct-2512-BF16-mmproj.gguf?download=true",
+            url = "https://hf-mirror.com/mistralai/Ministral-3-14B-Instruct-2512-GGUF/resolve/74fac473c43357d7fb2671713608183cc72496d0/Ministral-3-14B-Instruct-2512-BF16-mmproj.gguf?download=true",
             category = "multimodal",
             sizeBytes = 879258784L,
             source = "MistralAI",
@@ -4871,7 +4871,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (UD-IQ2_XXS)",
             description = "Meta's 30B vision-language agent model. UD-IQ2_XXS quantization. 131k context. Requires a separate Muse Glimmer Vision Projector for image input. 10.75 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ2_XXS.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ2_XXS.gguf?download=true",
             category = "multimodal",
             sizeBytes = 10746373152L,
             source = "Meta via Unsloth",
@@ -4886,7 +4886,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (UD-IQ2_XS)",
             description = "Meta's 30B vision-language agent model. UD-IQ2_XS quantization. 131k context. Requires a separate Muse Glimmer Vision Projector for image input. 11.51 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ2_XS.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ2_XS.gguf?download=true",
             category = "multimodal",
             sizeBytes = 11513104416L,
             source = "Meta via Unsloth",
@@ -4901,7 +4901,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (UD-IQ2_M)",
             description = "Meta's 30B vision-language agent model. UD-IQ2_M quantization. 131k context. Requires a separate Muse Glimmer Vision Projector for image input. 12.26 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ2_M.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ2_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 12255421472L,
             source = "Meta via Unsloth",
@@ -4916,7 +4916,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (UD-Q2_K_XL)",
             description = "Meta's 30B vision-language agent model. UD-Q2_K_XL quantization. 131k context. Requires a separate Muse Glimmer Vision Projector for image input. 12.44 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-Q2_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-Q2_K_XL.gguf?download=true",
             category = "multimodal",
             sizeBytes = 12444212256L,
             source = "Meta via Unsloth",
@@ -4931,7 +4931,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (UD-IQ3_XXS)",
             description = "Meta's 30B vision-language agent model. UD-IQ3_XXS quantization. 131k context. Requires a separate Muse Glimmer Vision Projector for image input. 13.13 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ3_XXS.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ3_XXS.gguf?download=true",
             category = "multimodal",
             sizeBytes = 13130658848L,
             source = "Meta via Unsloth",
@@ -4946,7 +4946,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (UD-Q3_K_XL)",
             description = "Meta's 30B vision-language agent model. UD-Q3_K_XL quantization. 131k context. Requires a separate Muse Glimmer Vision Projector for image input. 13.36 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-Q3_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-Q3_K_XL.gguf?download=true",
             category = "multimodal",
             sizeBytes = 13360983072L,
             source = "Meta via Unsloth",
@@ -4961,7 +4961,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (UD-IQ3_M)",
             description = "Meta's 30B vision-language agent model. UD-IQ3_M quantization. 131k context. Requires a separate Muse Glimmer Vision Projector for image input. 14.12 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ3_M.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-IQ3_M.gguf?download=true",
             category = "multimodal",
             sizeBytes = 14122705696L,
             source = "Meta via Unsloth",
@@ -4976,7 +4976,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (UD-Q4_K_XL)",
             description = "Meta's 30B vision-language agent model. UD-Q4_K_XL quantization. 131k context. Requires a separate Muse Glimmer Vision Projector for image input. 15.88 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-Q4_K_XL.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/Muse-Glimmer-30B-UD-Q4_K_XL.gguf?download=true",
             category = "multimodal",
             sizeBytes = 15878222368L,
             source = "Meta via Unsloth",
@@ -4991,7 +4991,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (Vision Projector, BF16)",
             description = "Vision Projector (mmproj) required to enable image input for Muse Glimmer 30B GGUF models. BF16 variant. 3.85 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/mmproj-Muse-Glimmer-30B-BF16.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/mmproj-Muse-Glimmer-30B-BF16.gguf?download=true",
             category = "multimodal",
             sizeBytes = 3849173728L,
             source = "Meta via Unsloth",
@@ -5004,7 +5004,7 @@ object ModelData {
         LLMModel(
             name = "Muse Glimmer 30B (Vision Projector, Q8_0)",
             description = "Vision Projector (mmproj) required to enable image input for Muse Glimmer 30B GGUF models. Q8_0 variant for a smaller download. 2.05 GB download.",
-            url = "https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/mmproj-Muse-Glimmer-30B-Q8_0.gguf?download=true",
+            url = "https://hf-mirror.com/unsloth/Muse-Glimmer-30B-GGUF/resolve/faa5b025c584459c13febfa5c59883516710ae39/mmproj-Muse-Glimmer-30B-Q8_0.gguf?download=true",
             category = "multimodal",
             sizeBytes = 2051685088L,
             source = "Meta via Unsloth",
@@ -5021,7 +5021,7 @@ object ModelData {
         LLMModel(
             name = "Whisper Tiny (English-only)",
             description = "Ultra-fast English-only ASR with NPU acceleration",
-            url = "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny.en/AudioEncoder.tflite",
+            url = "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny.en/AudioEncoder.tflite",
             category = "asr",
             sizeBytes = 155209020L, // 3 TFLite + tokenizer.json (2405679) + config.json (1937)
             source = "OpenAI via WhisperKit",
@@ -5032,16 +5032,16 @@ object ModelData {
             contextWindowSize = 0,
             modelFormat = "whisperkit",
             additionalFiles = listOf(
-                "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny.en/MelSpectrogram.tflite",
-                "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny.en/TextDecoder.tflite",
-                "https://huggingface.co/openai/whisper-tiny.en/resolve/main/tokenizer.json",
-                "https://huggingface.co/openai/whisper-tiny.en/resolve/main/config.json"
+                "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny.en/MelSpectrogram.tflite",
+                "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny.en/TextDecoder.tflite",
+                "https://hf-mirror.com/openai/whisper-tiny.en/resolve/main/tokenizer.json",
+                "https://hf-mirror.com/openai/whisper-tiny.en/resolve/main/config.json"
             )
         ),
         LLMModel(
             name = "Whisper Tiny (Multilingual)",
             description = "Ultra-fast multilingual ASR with NPU acceleration and auto language detect",
-            url = "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny/AudioEncoder.tflite",
+            url = "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny/AudioEncoder.tflite",
             category = "asr",
             sizeBytes = 155232685L, // 3 TFLite + tokenizer.json (2480466) + config.json (1983)
             source = "OpenAI via WhisperKit",
@@ -5052,16 +5052,16 @@ object ModelData {
             contextWindowSize = 0,
             modelFormat = "whisperkit",
             additionalFiles = listOf(
-                "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny/MelSpectrogram.tflite",
-                "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny/TextDecoder.tflite",
-                "https://huggingface.co/openai/whisper-tiny/resolve/main/tokenizer.json",
-                "https://huggingface.co/openai/whisper-tiny/resolve/main/config.json"
+                "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny/MelSpectrogram.tflite",
+                "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-tiny/TextDecoder.tflite",
+                "https://hf-mirror.com/openai/whisper-tiny/resolve/main/tokenizer.json",
+                "https://hf-mirror.com/openai/whisper-tiny/resolve/main/config.json"
             )
         ),
         LLMModel(
             name = "Whisper Base (English-only)",
             description = "Fast English-only ASR with NPU acceleration",
-            url = "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base.en/AudioEncoder.tflite",
+            url = "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base.en/AudioEncoder.tflite",
             category = "asr",
             sizeBytes = 294658912L, // 3 TFLite + tokenizer.json (2405679) + config.json (1937)
             source = "OpenAI via WhisperKit",
@@ -5072,16 +5072,16 @@ object ModelData {
             contextWindowSize = 0,
             modelFormat = "whisperkit",
             additionalFiles = listOf(
-                "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base.en/MelSpectrogram.tflite",
-                "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base.en/TextDecoder.tflite",
-                "https://huggingface.co/openai/whisper-base.en/resolve/main/tokenizer.json",
-                "https://huggingface.co/openai/whisper-base.en/resolve/main/config.json"
+                "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base.en/MelSpectrogram.tflite",
+                "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base.en/TextDecoder.tflite",
+                "https://hf-mirror.com/openai/whisper-base.en/resolve/main/tokenizer.json",
+                "https://hf-mirror.com/openai/whisper-base.en/resolve/main/config.json"
             )
         ),
         LLMModel(
             name = "Whisper Base (Multilingual)",
             description = "Fast multilingual ASR with NPU acceleration and auto language detect",
-            url = "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base/AudioEncoder.tflite",
+            url = "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base/AudioEncoder.tflite",
             category = "asr",
             sizeBytes = 294735793L, // 3 TFLite + tokenizer.json (2480466) + config.json (1983)
             source = "OpenAI via WhisperKit",
@@ -5092,10 +5092,10 @@ object ModelData {
             contextWindowSize = 0,
             modelFormat = "whisperkit",
             additionalFiles = listOf(
-                "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base/MelSpectrogram.tflite",
-                "https://huggingface.co/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base/TextDecoder.tflite",
-                "https://huggingface.co/openai/whisper-base/resolve/main/tokenizer.json",
-                "https://huggingface.co/openai/whisper-base/resolve/main/config.json"
+                "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base/MelSpectrogram.tflite",
+                "https://hf-mirror.com/argmaxinc/whisperkit-litert/resolve/main/openai_whisper-base/TextDecoder.tflite",
+                "https://hf-mirror.com/openai/whisper-base/resolve/main/tokenizer.json",
+                "https://hf-mirror.com/openai/whisper-base/resolve/main/config.json"
             )
         )
     )
@@ -5104,7 +5104,7 @@ object ModelData {
         LLMModel(
             name = "SoundGen Quick (LiteRT)",
             description = "Fast local sound effects and music generation. Pinned to commit e50bf9d. ~1.1 GB download.",
-            url = "https://huggingface.co/jegly/audio/resolve/e50bf9dff759c8622371a9c43ede989ea2d04b32/dit_model.tflite",
+            url = "https://hf-mirror.com/jegly/audio/resolve/e50bf9dff759c8622371a9c43ede989ea2d04b32/dit_model.tflite",
             category = "music_generation",
             sizeBytes = 1101795872L,
             source = "jegly/audio via HuggingFace",
@@ -5117,15 +5117,15 @@ object ModelData {
             additionalFiles = listOf(
                 // The decoder with its two largest dilated convolutions rewritten as undilated ones (same output), which
                 // LiteRT 2.3.0 compiles for the GPU; see timmyboy26/soundgen-quick-litert-gpu.
-                "https://huggingface.co/timmyboy26/soundgen-quick-litert-gpu/resolve/610d2ad5b7058f53da8465b584d042b6ee8ed6f9/autoencoder_model_undilated_1g.tflite",
-                "https://huggingface.co/jegly/audio/resolve/e50bf9dff759c8622371a9c43ede989ea2d04b32/conditioners_float32.tflite",
-                "https://huggingface.co/jegly/audio/resolve/e50bf9dff759c8622371a9c43ede989ea2d04b32/spiece.model"
+                "https://hf-mirror.com/timmyboy26/soundgen-quick-litert-gpu/resolve/610d2ad5b7058f53da8465b584d042b6ee8ed6f9/autoencoder_model_undilated_1g.tflite",
+                "https://hf-mirror.com/jegly/audio/resolve/e50bf9dff759c8622371a9c43ede989ea2d04b32/conditioners_float32.tflite",
+                "https://hf-mirror.com/jegly/audio/resolve/e50bf9dff759c8622371a9c43ede989ea2d04b32/spiece.model"
             )
         ),
         LLMModel(
             name = "SoundGen HD (LiteRT)",
             description = "Higher quality local audio generation (L256 model). Pinned to commit 43a3e87. ~2.0 GB download.",
-            url = "https://huggingface.co/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/dit_L256_int8.tflite",
+            url = "https://hf-mirror.com/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/dit_L256_int8.tflite",
             category = "music_generation",
             sizeBytes = 2042553968L,
             source = "jegly/noise via HuggingFace",
@@ -5136,15 +5136,15 @@ object ModelData {
             contextWindowSize = 0,
             modelFormat = "tflite",
             additionalFiles = listOf(
-                "https://huggingface.co/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/ae_dec_L256_int8.tflite",
-                "https://huggingface.co/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/t5gemma_enc_int8.tflite",
-                "https://huggingface.co/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/tokenizer.model"
+                "https://hf-mirror.com/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/ae_dec_L256_int8.tflite",
+                "https://hf-mirror.com/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/t5gemma_enc_int8.tflite",
+                "https://hf-mirror.com/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/tokenizer.model"
             )
         ),
         LLMModel(
             name = "SoundGen HD Long (AudioGen)",
             description = "Longer high-quality local audio generation (L2048 model). Pinned to commit 43a3e87. ~2.1 GB download.",
-            url = "https://huggingface.co/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/dit_L2048_int8.tflite",
+            url = "https://hf-mirror.com/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/dit_L2048_int8.tflite",
             category = "music_generation",
             sizeBytes = 2107289483L,
             source = "jegly/noise via HuggingFace",
@@ -5155,15 +5155,15 @@ object ModelData {
             contextWindowSize = 0,
             modelFormat = "tflite",
             additionalFiles = listOf(
-                "https://huggingface.co/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/ae_dec_L2048_int8.tflite",
-                "https://huggingface.co/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/t5gemma_enc_int8.tflite",
-                "https://huggingface.co/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/tokenizer.model"
+                "https://hf-mirror.com/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/ae_dec_L2048_int8.tflite",
+                "https://hf-mirror.com/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/t5gemma_enc_int8.tflite",
+                "https://hf-mirror.com/jegly/noise/resolve/43a3e8771f62bfc9257276c7e2adee9c76d601dd/tokenizer.model"
             )
         )
     )
 
     private const val LTXV_GGUF_REPO =
-        "https://huggingface.co/calcuis/ltxv-gguf/resolve/0990265881485e3419312141f6a1974ab2f7a4c6"
+        "https://hf-mirror.com/calcuis/ltxv-gguf/resolve/0990265881485e3419312141f6a1974ab2f7a4c6"
 
     // All files of a video model are downloaded into filesDir/models/<sanitized name>/ with their
     // original file names (see VideoGenEngine.modelDir). sizeBytes is the sum of every file.
@@ -5210,7 +5210,7 @@ object ModelData {
 
     // QNN context binaries for the Hexagon NPU, built by android/tools/ltxv_qnn (QAIRT 2.50).
     private const val LTXV_QNN_REPO =
-        "https://huggingface.co/timmyboy26/LTX-Video-2B-0.9.8-distilled-QNN/resolve/fc8e5ed0f1f2877ab58ab1ee1db262e77a5506f6"
+        "https://hf-mirror.com/timmyboy26/LTX-Video-2B-0.9.8-distilled-QNN/resolve/fc8e5ed0f1f2877ab58ab1ee1db262e77a5506f6"
 
     private const val LTXV_T5_SIZE = 2896123072L
     private const val LTXV_VAE_GGUF_SIZE = 2493868876L
@@ -5310,7 +5310,7 @@ object ModelData {
 
     // Stable Diffusion 1.5 LiteRT builds, AOT-compiled per Google Tensor TPU with the Tensor SDK beta.
     private const val SD15_LITERT_REPO =
-        "https://huggingface.co/timmyboy26/stable-diffusion-v1-5-LiteRT-NPU/resolve/f71417cd334e9cee78571412782b91a0be1b78e1"
+        "https://hf-mirror.com/timmyboy26/stable-diffusion-v1-5-LiteRT-NPU/resolve/f71417cd334e9cee78571412782b91a0be1b78e1"
     private const val SD15_LITERT_TOKENIZER_SIZE = 1059962L + 524619L
 
     /** One per-SoC build: the Build.SOC_MODEL values it runs on and its (path, size) files. */
@@ -5351,11 +5351,11 @@ object ModelData {
     }
 
     private const val EMBEDDING_GEMMA_2_REPO =
-        "https://huggingface.co/litert-community/embeddinggemma-2-740m-litert-lm/resolve/24d962e906c7d332c6428e71c9676855024569e2"
+        "https://hf-mirror.com/litert-community/embeddinggemma-2-740m-litert-lm/resolve/24d962e906c7d332c6428e71c9676855024569e2"
     private const val EMBEDDING_GEMMA_2_440_REPO =
-        "https://huggingface.co/litert-community/embeddinggemma-2-text-vision-440m-litert-lm/resolve/e301f74d5551b0c2641bd5cb4652a76239d5c5f8"
+        "https://hf-mirror.com/litert-community/embeddinggemma-2-text-vision-440m-litert-lm/resolve/e301f74d5551b0c2641bd5cb4652a76239d5c5f8"
     private const val EMBEDDING_GEMMA_2_270_REPO =
-        "https://huggingface.co/litert-community/embeddinggemma-2-text-270m-litert-lm/resolve/9be6e8b90982095dc05c2bd162e4b954ee4dbac7"
+        "https://hf-mirror.com/litert-community/embeddinggemma-2-text-270m-litert-lm/resolve/9be6e8b90982095dc05c2bd162e4b954ee4dbac7"
 
     private data class EmbeddingGemma2NpuVariant(
         val tag: String,

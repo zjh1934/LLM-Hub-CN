@@ -117,7 +117,7 @@ class ModelDownloader(
                         } else {
                             "✗ Token is INVALID or REVOKED (HTTP 401).\n" +
                             "Check: local.properties has correct HF_TOKEN\n" +
-                            "Visit: https://huggingface.co/settings/tokens to verify"
+                            "HF-Mirror 不支持账号登录；Gemma/Llama 等受限模型请自备 HF Token 并改用官方源"
                         }
                     }
                     403 -> {
@@ -128,7 +128,7 @@ class ModelDownloader(
                             "This model may be GATED and require:\n" +
                             "  1. Accepting the license on HuggingFace\n" +
                             "  2. Using a token with sufficient permissions\n" +
-                            "Visit: https://huggingface.co/$repoId"
+                            "Visit: https://hf-mirror.com/$repoId"
                         }
                     }
                     404 -> {
@@ -147,7 +147,7 @@ class ModelDownloader(
             }
 
             Log.i(TAG, "Checking token access via HuggingFace API for repo: $repoId")
-            val apiUrl = "https://huggingface.co/api/models/$repoId"
+            val apiUrl = "https://hf-mirror.com/api/models/$repoId"
 
             val url = URL(apiUrl)
             val connection = (url.openConnection() as HttpURLConnection).apply {
@@ -168,7 +168,7 @@ class ModelDownloader(
             when (responseCode) {
                 in 200..299 -> "✓ Repo exists and token has access"
                 401 -> "✗ Token invalid/expired (HTTP 401)"
-                403 -> "✗ Access denied - likely gated model (HTTP 403)\nVisit: https://huggingface.co/$repoId to accept license"
+                403 -> "✗ Access denied - likely gated model (HTTP 403)\nVisit: https://hf-mirror.com/$repoId to accept license"
                 404 -> "✗ Repo not found (HTTP 404) or is private without access"
                 else -> "⚠ HTTP $responseCode - unclear access status"
             }
@@ -210,11 +210,11 @@ class ModelDownloader(
                 instanceFollowRedirects = false // Manually handle redirects to preserve auth header
                 setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
 
-                // Only send HuggingFace token to huggingface.co or hf.co domains.
+                // Only send HuggingFace token to hf-mirror.com or hf.co domains.
                 // Sending it to a redirected domain (like an AWS S3 pre-signed URL) will cause
                 // the S3 strictly-enforced signature verification to fail with a 403 Forbidden.
                 val host = url.host ?: ""
-                val isHuggingFaceDomain = host == "huggingface.co" || host.endsWith(".huggingface.co") ||
+                val isHuggingFaceDomain = host == "hf-mirror.com" || host.endsWith(".hf-mirror.com") ||
                                           host == "hf.co" || host.endsWith(".hf.co")
 
                 val activeToken = getActiveToken()
@@ -272,7 +272,7 @@ class ModelDownloader(
                     // For 403 errors, try to provide diagnostic information
                     val errorMsg = if (responseCode == 403) {
                         try {
-                            // Try to extract repo ID from URL (format: https://huggingface.co/owner/repo/resolve/...)
+                            // Try to extract repo ID from URL (format: https://hf-mirror.com/owner/repo/resolve/...)
                             val repoMatch = Regex("huggingface\\.co/([^/]+/[^/]+)").find(currentUrl)
                             val repoId = repoMatch?.groupValues?.get(1) ?: "unknown/repo"
                             val diagnostics = validateTokenAccess(repoId, currentUrl)

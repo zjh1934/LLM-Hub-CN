@@ -30,7 +30,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         val hfToken: String = localProperties.getProperty("HF_TOKEN", "")
         buildConfigField("String", "HF_TOKEN", "\"$hfToken\"")
-        val debugPremium: Boolean = localProperties.getProperty("DEBUG_PREMIUM", "false").toBoolean()
+        val debugPremium: Boolean = localProperties.getProperty("DEBUG_PREMIUM", "true").toBoolean()
         buildConfigField("Boolean", "DEBUG_PREMIUM", "$debugPremium")
 
 
