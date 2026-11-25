@@ -1,0 +1,13 @@
+固定签名证书指纹（SHA-256）
+================================
+72:23:D0:38:A8:B1:43:15:87:0F:66:DA:ED:FB:17:F0:FF:8A:D0:C2:06:84:15:16:23:D9:D6:BD:3D:F0:EA:E7
+
+密钥文件：llmhub-cn.p12（PKCS12，alias llmhub-cn）
+存放位置：GitHub Actions Secret SIGNING_KEYSTORE_BASE64（仓库内唯一副本）
+本地备份：请自行妥善保存 llmhub-cn.p12，Secret 不可读回。
+
+核对方法：每个 Release 附带的 cert-sha256.txt 是 apksigner 对该 APK 的实际输出，
+格式形如 "Signer #1 certificate SHA-256 digest: 7223d038..."，与本文件去掉冒号后一致即正确。
+
+只要不改 Secret、不改 alias，后续任何 v* 标签构建出的 APK 都使用同一证书，
+可直接覆盖安装，App 私有目录 files/models 里的模型不会丢失。
